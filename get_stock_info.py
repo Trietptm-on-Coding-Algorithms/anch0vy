@@ -11,11 +11,11 @@ def parsing(a,b,c,d,e):
     data = urllib.urlopen(get_url).read()
     data = data.replace('</td></tr>','\n')
     data = data.replace('<tr><td>','')
-    data = data.replace('<img src="http://inc.krx.co.kr/image/cm/icon/i401.gif" alt = "\xec\x83\x81\xec\x8a\xb9"/>','') #»ó½Â
-    data = data.replace('<img src="http://inc.krx.co.kr/image/cm/icon/i402.gif" alt = "\xed\x95\x98\xeb\x9d\xbd"/>','') #ÇÏ¶ô
-#¾ø´Â µ¥ÀÌÅÍ    data = data.replace('<img src="http://inc.krx.co.kr/image/cm/icon/i403.gif" alt = ""/>','')
-    data = data.replace('<img src="http://inc.krx.co.kr/image/cm/icon/i404.gif" alt = "\xec\x83\x81\xed\x95\x9c"/>','') #»óÇÑ
-    data = data.replace('<img src="http://inc.krx.co.kr/image/cm/icon/i405.gif" alt = "\xed\x95\x98\xed\x95\x9c"/>','') #ÇÏÇÑ
+    data = data.replace('<img src="http://inc.krx.co.kr/image/cm/icon/i401.gif" alt = "\xec\x83\x81\xec\x8a\xb9"/>','') #ìƒìŠ¹
+    data = data.replace('<img src="http://inc.krx.co.kr/image/cm/icon/i402.gif" alt = "\xed\x95\x98\xeb\x9d\xbd"/>','') #í•˜ë½
+#ì—†ëŠ” ë°ì´í„°    data = data.replace('<img src="http://inc.krx.co.kr/image/cm/icon/i403.gif" alt = ""/>','')
+    data = data.replace('<img src="http://inc.krx.co.kr/image/cm/icon/i404.gif" alt = "\xec\x83\x81\xed\x95\x9c"/>','') #ìƒí•œ
+    data = data.replace('<img src="http://inc.krx.co.kr/image/cm/icon/i405.gif" alt = "\xed\x95\x98\xed\x95\x9c"/>','') #í•˜í•œ
     data = data.replace('<em class ="up">','')
     data = data.replace('<em class ="down">','')
     data = data.replace(',','')
