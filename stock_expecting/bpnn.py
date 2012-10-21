@@ -128,12 +128,12 @@ class NN:
         for p in patterns:
             print(p[0], '->', self.update(p[0]))
             print('')
-#########내가 수정함#######
+#########내가 추가함#######
     def test_custom(self, patterns, today_money, tommorow_money, yesterday_money):
         for p in patterns:
             expect = self.update(p[0])[0]+(0.85*10/3)/10*3*float(today_money)
             print 'yesterday:',yesterday_money,'\texpect' ,expect, '\t-> ' ,tommorow_money, '\terr:',(float(tommorow_money)-expect)/float(tommorow_money)*100,'%'
-#########내가 수정함#######
+#########내가 추가#######
 
 
     def weights(self):
@@ -164,11 +164,12 @@ def showMatrix(m):
     for j in range(len(m[0])):
 	    output += str(j) + "\t\t"
     output += "\n"
+	
     for i in range(len(m)):
 	    output += str(i) + "\t"	
 	    for j in range(len(m[i])):
 		    output += str(m[i][j]) + "\t"
-           output += "\n"
+	    output += "\n"
     return output
 
 def demo():
