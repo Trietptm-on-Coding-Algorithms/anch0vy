@@ -168,7 +168,7 @@ def showMatrix(m):
 	    output += str(i) + "\t"	
 	    for j in range(len(m[i])):
 		    output += str(m[i][j]) + "\t"
-    	output += "\n"
+      	output += "\n"
     return output
 
 def demo():
