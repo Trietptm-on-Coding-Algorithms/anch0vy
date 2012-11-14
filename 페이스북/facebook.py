@@ -1,4 +1,7 @@
 # -*- coding: cp949 -*-
+
+#일단 크롬만 지원을 목표
+
 import httplib
 import urllib
 import re
@@ -6,7 +9,7 @@ import re
 
 c_user = ''
 
-def send_stop(site_cookie,session_id,c_user):
+def send_stop(site_cookie,session_id,c_user,xs,fb_dtsg):
     __user = '_' + c_user[1:]
     params = 'session_id='+str(session_id)+'&'+c_user+'&__a=1&fb_dtsg=AQD9ZuU8'
     print params
@@ -22,7 +25,7 @@ def send_stop(site_cookie,session_id,c_user):
     headers['Accept-Charset']='windows-949,utf-8;q=0.7,*;q=0.3'
     headers['Cookie']=site_cookie
     headers['Host']='www.facebook.com'
-    conn=httplib.HTTPSConnection(host)
+    conn=httplib.HTTPSConnection('www.facebook.com')
     conn.request('POST','/ajax/settings/security/sessions/stop.php',params,headers)
     response = conn.getresponse()
     #print response.getheaders()
@@ -31,18 +34,9 @@ def send_stop(site_cookie,session_id,c_user):
     conn.close()
     raw_input('step')#debug
 
-def get_info(site_cookie):
-    tmp = site_cookie.split('; ')
-    n = 0
-    for s in tmp:
-        if s[0] == 'c':
-            c_user = tmp[n]
-        else:
-            n = n + 1
-    if c_user == '':
-        print '잘못된 쿠키 파일'
-        exit()
-    host = 'm.facebook.com'
+def get_fb_dtsg(site_cookie):
+    site_cookie = site_cookie + ' xs=1%3AWaMJ6hll-ZbjeQ%3A2%3A1352879656;'
+    print site_cookie
     headers ={}
     headers['Connection']='keep-alive'
     headers['User-Agent']='NONE'
@@ -53,26 +47,23 @@ def get_info(site_cookie):
     headers['Accept-Language']='ko-KR,ko;q=0.8,en-US;q=0.6,en;q=0.4'
     headers['Accept-Charset']='windows-949,utf-8;q=0.7,*;q=0.3'
     headers['Cookie']=site_cookie
-    headers['Host']='m.facebook.com'
-    conn=httplib.HTTPSConnection(host)
+    headers['Host']='www.facebook.com'
+    conn=httplib.HTTPSConnection('m.facebook.com')
     conn.request('GET','/ajax/dtsg.php','',headers)
     response = conn.getresponse()
-    print response.getheaders()
-    raw_input('step')#debug
-    print response.read()
-    raw_input('step')#debug
-    print response.status, response.reason
-    raw_input('step')#debug
-    conn.close()
-
-    
+    t = response.read()
+    print t
+    regex = re.compile('''type=\"hidden\" name=\"fb_dtsg\" value=\"(.*?)\"''')
+    fb_dtsg = regex.findall(t)
+    #fb_dtsg = fb_dtsg[0]
+    print fb_dtsg #debug
 
 f_cookie = raw_input('쿠키 파일: ') 
 f_cookie = open(f_cookie)
 cookie = f_cookie.read()
 f_cookie.close()
-print cookie#debug
-get_info(cookie)
+#print cookie#debug
+get_fb_dtsg(cookie)
 raw_input('step')#debug
 
 for n in range(0,10):
