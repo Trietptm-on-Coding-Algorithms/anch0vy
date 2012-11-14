@@ -32,7 +32,7 @@ def send_stop(site_cookie,session_id):
     print response.status, response.reason
     conn.close()
 
-f_cookie = raw_input('ÄíÅ° ÆÄÀÏ: ')
+f_cookie = raw_input('ÄíÅ° ÆÄÀÏ: ') 
 f_cookie = open(f_cookie)
 cookie = f_cookie.read()
 f_cookie.close()
