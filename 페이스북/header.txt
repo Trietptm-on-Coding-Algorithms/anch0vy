@@ -1,0 +1,18 @@
+Host: www.facebook.com
+Connection: keep-alive
+Origin: https://www.facebook.com
+User-Agent: Mozilla/5.0 (Windows NT 5.1) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.152 Safari/535.19 CoolNovo/2.0.3.55
+Content-Type: application/x-www-form-urlencoded
+Accept: */*
+Referer: https://www.facebook.com/settings?tab=security&section=sessions&view
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: ko-KR,ko;q=0.8,en-US;q=0.6,en;q=0.4
+Accept-Charset: windows-949,utf-8;q=0.7,*;q=0.3
+Cookie: locale=ko_KR; datr=GKEjUOZg-n-QLo8_N4s7PjZt; lu=ggA_wMjVDnQWspmTLJWhErMw; c_user=1000058399; csm=2; fr=0zKUpFSUy9sRWvD6V.AWWei3J6UmQkTN6XBLUwgt_tEb0.BQI6EY.uF.AWVTD9f8; xs=1%3AqW7NSIwQRACzZQ%3A2%3A1352857997; sub=16777216; p=92; presence=EM352861560EuserFA21B058399A2EstateFDsb2F0Et2F_5b_5dElm2FnullEuct2F1352860022BEtrFnullEtwF1053211454EatF1352861524810G352861560393CEchFDp_5f1B058399F49CC; wd=1024x505; act=1352861595899%2F27%3A2; _e_0jXL_18=%5B%220jXL%22%2C1352861595903%2C%22act%22%2C1352861595899%2C27%2C%22https%3A%2F%2Fwww.facebook.com%2Fsettings%3Ftab%3Dsecurity%26section%3Dsessions%26view%23%22%2C%22click%22%2C%22click%22%2C%22-%22%2C%22r%22%2C%22%2Fsettings%3Ftab%3Dsecurity%26section%3Dsessions%26view%22%2C%7B%22ft%22%3A%7B%7D%2C%22gt%22%3A%7B%7D%7D%2C759%2C473%2C0%2C981%2C16%5D
+Content-Length: 83
+
+
+
+session_id=60&__user=1000058399&__a=1&fb_dtsg=AQD9ZuU8&phstamp=16581685790117855654
+
+여기서 content-Length는 전체에서 따로 구해야 함(아래 포스트 값 길이임)
