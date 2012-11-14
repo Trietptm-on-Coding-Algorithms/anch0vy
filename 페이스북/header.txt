@@ -18,3 +18,5 @@ session_id=60&__user=1000058399&__a=1&fb_dtsg=AQD9ZuU8&phstamp=16581685790117855
 여기서 content-Length는 전체에서 따로 구해야 함(아래 포스트 값 길이임)
 
 javascript:document.cookie
+
+c_user=1000058399; presence=EM352872212EuserFA21B058399A2EstateFDsb2F0Et2F_5b_5dElm2FnullEuct2F1352867609BEtrFA2loadA2EtwF1008351427EatF1352872196767G352872212051CEchFDp_5f1B058399F102CC; sub=805568514; p=92; act=1352872216234%2F7%3A2
