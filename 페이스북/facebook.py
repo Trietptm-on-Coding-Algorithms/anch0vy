@@ -1,6 +1,7 @@
 # -*- coding: cp949 -*-
 
 #쿠키값은 모조리 사용자가 집어넣는걸로 함
+#TODO: 쿠키값 자동으로 얻어오기
 
 import httplib
 import urllib
