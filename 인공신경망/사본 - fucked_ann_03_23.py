@@ -10,7 +10,7 @@ import random
 # 히든층을 나타내는 배열
 # 출력층을 나타내는 배열
 # 출력을 저장할 배열
-
+#
 
 def rand(a, b):
     return (b-a)*random.random() + a
@@ -19,7 +19,7 @@ def sigmoid(x):
     return 1/(1+math.e**(-x))
 
 def dsigmoid(x):
-    return x * (1-x)
+    return sigmoid(x) * (1-sigmoid(x))
 
 def clist(x,y,fill=0.0):
     m = []
@@ -29,18 +29,15 @@ def clist(x,y,fill=0.0):
     
 
 class ann:
-    def __init__(self,ni,nh,no,alpha=0.2,moment=0.5):
+    def __init__(self,ni,nh,no,alpha=0.1):
         self.ni = ni
         self.nh = nh
         self.no = no
         self.alpha = alpha #얼마나 민감하게 학습을 할지 결정하는 상수
         self.do = [0]*no
-        self.moment=moment #모멘트 계수
 
         self.lih = clist(self.ni,self.nh)
         self.lho = clist(self.nh,self.no)
-        self.cih = clist(self.ni,self.nh)#바뀌기 이전 값
-        self.cho = clist(self.nh,self.no)#바뀌기 이전 값
 
         self.oi = [0.0]*self.ni
         self.oh = [0.0]*self.nh
@@ -49,64 +46,52 @@ class ann:
 
         for x in range(self.ni):
             for y in range(self.nh):
-                self.lih[x][y] = rand(-2.0,2.0)
+                self.lih[x][y] = rand(-2.4/(self.ni+self.nh+self.no),2.4/(self.ni+self.nh+self.no))
         for x in range(self.nh):
             for y in range(self.no):
-                self.lho[x][y] = rand(-0.2,0.2)
+                self.lho[x][y] = rand(-2.4/(self.ni+self.nh+self.no),2.4/(self.ni+self.nh+self.no))
 
     def calc(self):
         for x in range(self.nh):
-            sum = 0.0
             for y in range(self.ni):
+                sum = 0.0
                 sum = sum + self.lih[y][x]*self.oi[y]
             self.oh[x] = sigmoid(sum)
 
         for x in range(self.no):
-            sum = 0.0
             for y in range(self.nh):
+                sum = 0.0
                 sum = sum + self.lho[y][x]*self.oh[y]
             self.oo[x] = sigmoid(sum)
             self.do[x] = dsigmoid(sum)#아래 은닉-출력층 계산시 사용
 
     def lff(self):
-        output_delta = [0.0] * self.no
+        #먼저 은닉-출력층 계산
+        self.s_delta=[0]*self.nh #델타값의 합
+        self.s_error=0 #오차의 지표
         for x in range(self.no):
-            error = self.answer[x]-self.oo[x]
-            output_delta[x] = dsigmoid(self.oo[x]) * error
-
-        hidden_delta = [0.0] * self.nh
-        for x in range(self.nh):
-            error = 0.0
-            for y in range(self.no):
-                error = error + output_delta[y] * self.lho[x][y]
-            hidden_delta[x] = dsigmoid(self.oh[x]) * error
-
-        for x in range(self.nh):
-            for y in range(self.no):
-                change = output_delta[y] * self.oh[x]
-                self.lho[x][y] = self.lho[x][y] + self.alpha*change + self.moment*self.cho[x][y]
-                self.cho[x][y] = change
-
-        for x in range(self.ni):
+            error = self.do[x] - self.oo[x]
+            self.s_error = self.s_error + error**2
             for y in range(self.nh):
-                change = hidden_delta[y] * self.oi[x]
-                self.lih[x][y] = self.lih[x][y] + self.alpha*change + self.moment*self.cih[x][y]
-                self.cih[x][y] = change
+                s_delta = 0.0
+                delta = self.oo[x] * (1-self.oo[x])*error
+                self.s_delta[y] = s_delta + delta*self.lho[y][x] #입력-은닉 사이의 층을 고칠때 사용
+                self.lho[y][x] = self.lho[y][x] + self.alpha * self.lho[y][x] * delta
 
-        error = 0.0
-        for x in range(self.no):
-            error = error + 0.5*(self.answer[x]-self.oo[x])**2
-        self.s_error = error
-                
-    def train(self,pat,num=10000):
+        for x in range(self.nh):
+            for y in range(self.ni):
+                delta = self.oh[x] * (1-self.oh[x]) * self.s_delta[x]
+                self.lih[y][x] = self.lih[y][x] + self.alpha * self.oi[y] * delta
+
+    def train(self,pat,num=1000):
         for n in range(num):
             for x in range(len(pat)):
                 self.oi = pat[x][0]
                 self.answer = pat[x][1]
                 self.calc()
                 self.lff()
-            num = num + 1
-            if num % 100 == 0:
+                self.calc()
+            if num%100 is 0:
                     print '현재 오차:',self.s_error
 
     def test(self,pat):
@@ -124,6 +109,6 @@ def demo():
     ai=ann(2,5,1)
     ai.train(pat)
     ai.test(pat)
-    print ai.lih,'\n',ai.lho
+        
 if __name__ == '__main__':
     demo()
