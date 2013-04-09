@@ -18,9 +18,6 @@ def rand(a, b):
 def sigmoid(x):
     return 1/(1+math.e**(-x))
 
-def dsigmoid(x):
-    return x * (1-x)
-
 def clist(x,y,fill=0.0):
     m = []
     for i in range(x):
@@ -29,7 +26,7 @@ def clist(x,y,fill=0.0):
     
 
 class ann:
-    def __init__(self,ni,nh,no,alpha=0.2,moment=0.5):
+    def __init__(self,ni,nh,no,alpha=0.1,moment=1.0):
         self.ni = ni
         self.nh = nh
         self.no = no
@@ -66,20 +63,19 @@ class ann:
             for y in range(self.nh):
                 sum = sum + self.lho[y][x]*self.oh[y]
             self.oo[x] = sigmoid(sum)
-            self.do[x] = dsigmoid(sum)#아래 은닉-출력층 계산시 사용
 
     def lff(self):
         output_delta = [0.0] * self.no
         for x in range(self.no):
             error = self.answer[x]-self.oo[x]
-            output_delta[x] = dsigmoid(self.oo[x]) * error
+            output_delta[x] = self.oo[x] * (1 - self.oo[x]) * error
 
         hidden_delta = [0.0] * self.nh
         for x in range(self.nh):
             error = 0.0
             for y in range(self.no):
                 error = error + output_delta[y] * self.lho[x][y]
-            hidden_delta[x] = dsigmoid(self.oh[x]) * error
+            hidden_delta[x] = self.oh[x] * (1 - self.oh[x]) * error
 
         for x in range(self.nh):
             for y in range(self.no):
@@ -98,7 +94,7 @@ class ann:
             error = error + 0.5*(self.answer[x]-self.oo[x])**2
         self.s_error = error
                 
-    def train(self,pat,num=10000):
+    def train(self,pat,num=1000):
         for n in range(num):
             for x in range(len(pat)):
                 self.oi = pat[x][0]
@@ -115,6 +111,7 @@ class ann:
             self.answer = pat[x][1]
             self.calc()
             print self.oi,' ---> ',self.oo
+
         
 def demo():
     pat = [[[0,0],[0]],
@@ -124,6 +121,6 @@ def demo():
     ai=ann(2,5,1)
     ai.train(pat)
     ai.test(pat)
-    print ai.lih,'\n',ai.lho
+    #print ai.lih,'\n',ai.lho
 if __name__ == '__main__':
     demo()
