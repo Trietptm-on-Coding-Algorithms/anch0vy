@@ -128,12 +128,12 @@ class NN:
         for p in patterns:
             print(p[0], '->', self.update(p[0]))
             print('')
-#########ë‚´ê°€ ì¶”ê°€í•¨#######
+#########³»°¡ Ãß°¡ÇÔ#######
     def test_custom(self, patterns, today_money, tommorow_money, yesterday_money):
         for p in patterns:
             expect = self.update(p[0])[0]+(0.85*10/3)/10*3*float(today_money)
             print 'yesterday:',yesterday_money,'\texpect' ,expect, '\t-> ' ,tommorow_money, '\terr:',(float(tommorow_money)-expect)/float(tommorow_money)*100,'%'
-#########ë‚´ê°€ ì¶”ê°€#######
+#########³»°¡ Ãß°¡#######
 
 
     def weights(self):
@@ -182,7 +182,7 @@ def demo():
     ]
 
     # create a network with two input, two hidden, and one output nodes
-    n = NN(2, 2, 1)
+    n = NN(2,2, 1)
     # train it with some patterns
     n.train(pat)
     # test it

@@ -2,8 +2,16 @@
 from __future__ import division
 import math
 import random
+import md5
 
-random.seed(0)
+# 이거 lff 할때 오른쪽에서 왼쪽으로 가는거였당....
+# 층은 입력 은닉 출력 3개의 층
+# 뉴런당 자신의 bias 랑 들어오는 신호의 가중치값들에 대한 정보를 가지고 있다
+# 입력을 저장할 배열
+# 히든층을 나타내는 배열
+# 출력층을 나타내는 배열
+# 출력을 저장할 배열
+
 
 def rand(a, b):
     return (b-a)*random.random() + a
@@ -19,7 +27,7 @@ def clist(x,y,fill=0.0):
     
 
 class ann:
-    def __init__(self,ni,nh,no,alpha=0.5,moment=1.0):
+    def __init__(self,ni,nh,no,alpha=0.1,moment=1.0):
         self.ni = ni
         self.nh = nh
         self.no = no
@@ -107,12 +115,21 @@ class ann:
 
         
 def demo():
+    for x in range(1000):
+        pat = []
+        x = str(x)
+        a=md5.md5(x).hexdigest
+        for q in range(16):
+            qq = '0x' + a[a*2:a*2+1]
+            qq = bin(int(qq,16))
+        
+        
     pat = [[[0,0],[0]],
            [[0,1],[1]],
            [[1,0],[1]],
            [[1,1],[0]]]
-    ai=ann(2,4,1)
-    ai.train(pat,1000)
+    ai=ann(2,5,1)
+    ai.train(pat)
     ai.test(pat)
     #print ai.lih,'\n',ai.lho
 if __name__ == '__main__':
