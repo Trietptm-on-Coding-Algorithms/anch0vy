@@ -14,3 +14,4 @@ def full_asmgen(string):
         ret=ret+'\n'+op
         print ret#debug
     return ret[1:]
+
