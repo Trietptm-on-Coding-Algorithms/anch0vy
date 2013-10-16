@@ -11,7 +11,8 @@ def full_asmgen(string):
     ret=''
     while(len(string)):
         op,string=engine.asmgen(string,32)
+        print op
         ret=ret+'\n'+op
-        print ret#debug
+        
     return ret[1:]
 

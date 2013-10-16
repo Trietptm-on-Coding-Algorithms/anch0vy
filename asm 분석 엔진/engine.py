@@ -6,32 +6,28 @@ import struct
 def asmgen(opcode,bit):
     if opcode[0]=='\x00':
         if bit==32:
-            ret,ret_byte=ModRM32(opcode[1:],1,1,E=0)
-            return 'ADD '+ret,opcode[1+ret_byte:]
+            return Eb_Gb(opcode,'ADD',1)
         elif bit==64:
             pass
 
 
     elif opcode[0]=='\x01':
         if bit==32:
-            ret,ret_byte=ModRM32(opcode[1:],4,4,E=0)
-            return 'ADD '+ret,opcode[1+ret_byte:]
+            return Ev_Gv(opcode,'ADD',1)
         elif bit==64:
             pass
 
 
     elif opcode[0]=='\x02':
         if bit==32:
-            ret,ret_byte=ModRM32(opcode[1:],1,1,E=1)
-            return 'ADD '+ret,opcode[1+ret_byte:]
+            return Gb_Eb(opcode,'ADD',1)
         elif bit==64:
             pass
 
 
     elif opcode[0]=='\x03':
         if bit==32:
-            ret,ret_byte=ModRM32(opcode[1:],4,4,E=1)
-            return 'ADD '+ret,opcode[1+ret_byte:]
+            return Gv_Ev(opcode,'ADD',1)
         elif bit==64:
             pass
 
@@ -46,7 +42,7 @@ def asmgen(opcode,bit):
 
     elif opcode[0]=='\x05':
         if bit==32:
-            ret=unpack_4(opcode[1:5])[0]
+            ret=unpack_us4(opcode[1:5])[0]
             return 'ADD EAX,'+hex(ret),opcode[5:]
         elif bit==64:
             pass
@@ -68,32 +64,28 @@ def asmgen(opcode,bit):
 
     elif opcode[0]=='\x08':
         if bit==32:
-            ret,ret_byte=ModRM32(opcode[1:],1,1,E=0)
-            return 'OR '+ret,opcode[1+ret_byte:]
+            return Eb_Gb(opcode,'OR',1)
         elif bit==64:
             pass
 
 
     elif opcode[0]=='\x09':
         if bit==32:
-            ret,ret_byte=ModRM32(opcode[1:],4,4,E=0)
-            return 'OR '+ret,opcode[1+ret_byte:]
+            return Ev_Gv(opcode,'OR',1)
         elif bit==64:
             pass
 
 
     elif opcode[0]=='\x0a':
         if bit==32:
-            ret,ret_byte=ModRM32(opcode[1:],1,1,E=1)
-            return 'OR '+ret,opcode[1+ret_byte:]
+            return Gb_Eb(opcode,'OR',1)
         elif bit==64:
             pass
 
 
     elif opcode[0]=='\x0b':
         if bit==32:
-            ret,ret_byte=ModRM32(opcode[1:],4,4,E=1)
-            return 'OR '+ret,opcode[1+ret_byte:]
+            return Gv_Ev(opcode,'OR',1)
         elif bit==64:
             pass
 
@@ -108,7 +100,7 @@ def asmgen(opcode,bit):
 
     elif opcode[0]=='\x0d':
         if bit==32:
-            ret=unpack_4(opcode[1:5])[0]
+            ret=unpack_us4(opcode[1:5])[0]
             return 'OR EAX,'+hex(ret),opcode[5:]
         elif bit==64:
             pass
@@ -127,32 +119,28 @@ def asmgen(opcode,bit):
 
     elif opcode[0]=='\x10':
         if bit==32:
-            ret,ret_byte=ModRM32(opcode[1:],1,1,E=0)
-            return 'ADD '+ret,opcode[1+ret_byte:]
+            return Eb_Gb(opcode,'ADC',1)
         elif bit==64:
             pass
 
 
     elif opcode[0]=='\x11':
         if bit==32:
-            ret,ret_byte=ModRM32(opcode[1:],4,4,E=0)
-            return 'ADD '+ret,opcode[1+ret_byte:]
+            return Ev_Gv(opcode,'ADC',1)
         elif bit==64:
             pass
 
 
     elif opcode[0]=='\x12':
         if bit==32:
-            ret,ret_byte=ModRM32(opcode[1:],1,1,E=1)
-            return 'ADC '+ret,opcode[1+ret_byte:]
+            return Gb_Eb(opcode,'ADC',1)
         elif bit==64:
             pass
 
 
     elif opcode[0]=='\x13':
         if bit==32:
-            ret,ret_byte=ModRM32(opcode[1:],4,4,E=1)
-            return 'ADC '+ret,opcode[1+ret_byte:]
+            return Gv_Ev(opcode,'ADC',1)
         elif bit==64:
             pass
 
@@ -167,7 +155,7 @@ def asmgen(opcode,bit):
 
     elif opcode[0]=='\x15':
         if bit==32:
-            ret=unpack_4(opcode[1:5])[0]
+            ret=unpack_us4(opcode[1:5])[0]
             return 'ADC EAX,'+hex(ret),opcode[5:]
         elif bit==64:
             pass
@@ -189,32 +177,28 @@ def asmgen(opcode,bit):
 
     elif opcode[0]=='\x18':
         if bit==32:
-            ret,ret_byte=ModRM32(opcode[1:],1,1,E=0)
-            return 'SBB '+ret,opcode[1+ret_byte:]
+            return Eb_Gb(opcode,'SBB',1)
         elif bit==64:
             pass
 
 
     elif opcode[0]=='\x19':
         if bit==32:
-            ret,ret_byte=ModRM32(opcode[1:],4,4,E=0)
-            return 'SBB '+ret,opcode[1+ret_byte:]
+            return Ev_Gv(opcode,'SBB',1)
         elif bit==64:
             pass
 
 
     elif opcode[0]=='\x1a':
         if bit==32:
-            ret,ret_byte=ModRM32(opcode[1:],1,1,E=1)
-            return 'SBB '+ret,opcode[1+ret_byte:]
+            return Gb_Eb(opcode,'SBB',1)
         elif bit==64:
             pass
 
 
     elif opcode[0]=='\x1b':
         if bit==32:
-            ret,ret_byte=ModRM32(opcode[1:],4,4,E=1)
-            return 'SBB '+ret,opcode[1+ret_byte:]
+            return Gv_Ev(opcode,'SBB',1)
         elif bit==64:
             pass
 
@@ -229,7 +213,7 @@ def asmgen(opcode,bit):
 
     elif opcode[0]=='\x1d':
         if bit==32:
-            ret=unpack_4(opcode[1:5])[0]
+            ret=unpack_us4(opcode[1:5])[0]
             return 'SBB EAX,'+hex(ret),opcode[5:]
         elif bit==64:
             pass
@@ -251,32 +235,28 @@ def asmgen(opcode,bit):
 
     elif opcode[0]=='\x20':
         if bit==32:
-            ret,ret_byte=ModRM32(opcode[1:],1,1,E=0)
-            return 'AND '+ret,opcode[1+ret_byte:]
+            return Eb_Gb(opcode,'AND',1)
         elif bit==64:
             pass
 
 
     elif opcode[0]=='\x21':
         if bit==32:
-            ret,ret_byte=ModRM32(opcode[1:],4,4,E=0)
-            return 'AND '+ret,opcode[1+ret_byte:]
+            return Ev_Gv(opcode,'AND',1)
         elif bit==64:
             pass
 
 
     elif opcode[0]=='\x22':
         if bit==32:
-            ret,ret_byte=ModRM32(opcode[1:],1,1,E=1)
-            return 'ANC '+ret,opcode[1+ret_byte:]
+            return Gb_Eb(opcode,'AND',1)
         elif bit==64:
             pass
 
 
     elif opcode[0]=='\x23':
         if bit==32:
-            ret,ret_byte=ModRM32(opcode[1:],4,4,E=1)
-            return 'ANC '+ret,opcode[1+ret_byte:]
+            return Gv_Ev(opcode,'AND',1)
         elif bit==64:
             pass
 
@@ -291,7 +271,7 @@ def asmgen(opcode,bit):
 
     elif opcode[0]=='\x25':
         if bit==32:
-            ret=unpack_4(opcode[1:5])[0]
+            ret=unpack_us4(opcode[1:5])[0]
             return 'ANC EAX,'+hex(ret),opcode[5:]
         elif bit==64:
             pass
@@ -299,7 +279,7 @@ def asmgen(opcode,bit):
 
     elif opcode[0]=='\x26':
         if bit==32:
-            return 'xxx',opcode[:]
+            return 'prefix SEG=ES',opcode[1:]
         elif bit==64:
             pass
 
@@ -313,32 +293,28 @@ def asmgen(opcode,bit):
 
     elif opcode[0]=='\x28':
         if bit==32:
-            ret,ret_byte=ModRM32(opcode[1:],1,1,E=0)
-            return 'SUB '+ret,opcode[1+ret_byte:]
+            return Eb_Gb(opcode,'SUB',1)
         elif bit==64:
             pass
 
 
     elif opcode[0]=='\x29':
         if bit==32:
-            ret,ret_byte=ModRM32(opcode[1:],4,4,E=0)
-            return 'SUB '+ret,opcode[1+ret_byte:]
+            return Ev_Gv(opcode,'SUB',1)
         elif bit==64:
             pass
 
 
     elif opcode[0]=='\x2a':
         if bit==32:
-            ret,ret_byte=ModRM32(opcode[1:],1,1,E=1)
-            return 'SUB '+ret,opcode[1+ret_byte:]
+            return Gb_Eb(opcode,'SUB',1)
         elif bit==64:
             pass
 
 
     elif opcode[0]=='\x2b':
         if bit==32:
-            ret,ret_byte=ModRM32(opcode[1:],4,4,E=1)
-            return 'SUB '+ret,opcode[1+ret_byte:]
+            return Gv_Ev(opcode,'SUB',1)
         elif bit==64:
             pass
 
@@ -353,7 +329,7 @@ def asmgen(opcode,bit):
 
     elif opcode[0]=='\x2d':
         if bit==32:
-            ret=unpack_4(opcode[1:5])[0]
+            ret=unpack_us4(opcode[1:5])[0]
             return 'SUB EAX,'+hex(ret),opcode[5:]
         elif bit==64:
             pass
@@ -361,7 +337,7 @@ def asmgen(opcode,bit):
 
     elif opcode[0]=='\x2e':
         if bit==32:
-            return 'xxx',opcode[:]
+            return 'prefix SEG=CS',opcode[1:]
         elif bit==64:
             pass
 
@@ -375,32 +351,28 @@ def asmgen(opcode,bit):
 
     elif opcode[0]=='\x30':
         if bit==32:
-            ret,ret_byte=ModRM32(opcode[1:],1,1,E=0)
-            return 'ADD '+ret,opcode[1+ret_byte:]
+            return Eb_Gb(opcode,'XOR',1)
         elif bit==64:
             pass
 
 
     elif opcode[0]=='\x31':
         if bit==32:
-            ret,ret_byte=ModRM32(opcode[1:],4,4,E=0)
-            return 'ADD '+ret,opcode[1+ret_byte:]
+            return Ev_Gv(opcode,'XOR',1)
         elif bit==64:
             pass
 
 
     elif opcode[0]=='\x32':
         if bit==32:
-            ret,ret_byte=ModRM32(opcode[1:],1,1,E=1)
-            return 'ADD '+ret,opcode[1+ret_byte:]
+            return Gb_Eb(opcode,'XOR',1)
         elif bit==64:
             pass
 
 
     elif opcode[0]=='\x33':
         if bit==32:
-            ret,ret_byte=ModRM32(opcode[1:],4,4,E=1)
-            return 'ADD '+ret,opcode[1+ret_byte:]
+            return Gv_Ev(opcode,'XOR',1)
         elif bit==64:
             pass
 
@@ -408,22 +380,22 @@ def asmgen(opcode,bit):
     elif opcode[0]=='\x34':
         if bit==32:
             ret=unpack_us1(opcode[1])[0]
-            return 'ADD AL,'+str(ret),opcode[2:]
+            return 'XOR AL,'+str(ret),opcode[2:]
         elif bit==64:
             pass
 
 
     elif opcode[0]=='\x35':
         if bit==32:
-            ret=unpack_4(opcode[1:5])[0]
-            return 'ADD EAX,'+hex(ret),opcode[5:]
+            ret=unpack_us4(opcode[1:5])[0]
+            return 'XOR EAX,'+hex(ret),opcode[5:]
         elif bit==64:
             pass
 
 
     elif opcode[0]=='\x36':
         if bit==32:
-            return 'xxx',opcode[:]
+            return 'prefix SEG=SS',opcode[1:]
         elif bit==64:
             pass
 
@@ -437,32 +409,28 @@ def asmgen(opcode,bit):
 
     elif opcode[0]=='\x38':
         if bit==32:
-            ret,ret_byte=ModRM32(opcode[1:],1,1,E=0)
-            return 'CMP '+ret,opcode[1+ret_byte:]
+            return Eb_Gb(opcode,'CMP',1)
         elif bit==64:
             pass
 
 
     elif opcode[0]=='\x39':
         if bit==32:
-            ret,ret_byte=ModRM32(opcode[1:],4,4,E=0)
-            return 'CMP '+ret,opcode[1+ret_byte:]
+            return Ev_Gv(opcode,'CMP',1)
         elif bit==64:
             pass
 
 
     elif opcode[0]=='\x3a':
         if bit==32:
-            ret,ret_byte=ModRM32(opcode[1:],1,1,E=1)
-            return 'CMP '+ret,opcode[1+ret_byte:]
+            return Gb_Eb(opcode,'CMP',1)
         elif bit==64:
             pass
 
 
     elif opcode[0]=='\x3b':
         if bit==32:
-            ret,ret_byte=ModRM32(opcode[1:],4,4,E=1)
-            return 'CMP '+ret,opcode[1+ret_byte:]
+            return Gv_Ev(opcode,'CMP',1)
         elif bit==64:
             pass
 
@@ -477,7 +445,7 @@ def asmgen(opcode,bit):
 
     elif opcode[0]=='\x3d':
         if bit==32:
-            ret=unpack_4(opcode[1:5])[0]
+            ret=unpack_us4(opcode[1:5])[0]
             return 'CMP EAX,'+hex(ret),opcode[5:]
         elif bit==64:
             pass
@@ -485,7 +453,7 @@ def asmgen(opcode,bit):
 
     elif opcode[0]=='\x3e':
         if bit==32:
-            return 'xxx',opcode[:]
+            return 'prefix SEG=DS',opcode[:]
         elif bit==64:
             pass
 
@@ -541,7 +509,7 @@ def asmgen(opcode,bit):
 
     elif opcode[0]=='\x46':
         if bit==32:
-            return 'INC ESP',opcode[1:]
+            return 'INC ESI',opcode[1:]
         elif bit==64:
             pass
 
@@ -751,16 +719,16 @@ def asmgen(opcode,bit):
             pass
 
 
-    elif opcode[0]=='\x64':
+    elif opcode[0]=='\x64':#prefix
         if bit==32:
-            return 'xxx',opcode[:]
+            return 'prefix SEG=FS',opcode[1:]
         elif bit==64:
             pass
 
 
     elif opcode[0]=='\x65':
         if bit==32:
-            return 'xxx',opcode[:]
+            return 'prefix SEG=GS',opcode[1:]
         elif bit==64:
             pass
 
@@ -782,7 +750,7 @@ def asmgen(opcode,bit):
     elif opcode[0]=='\x68':
         if bit==32:
             ret=unpack_us4(opcode[1:5])
-            return 'PUSH '+ret(hex),opcode[5:]
+            return 'PUSH '+hex(ret),opcode[5:]
         elif bit==64:
             pass
 
@@ -796,7 +764,8 @@ def asmgen(opcode,bit):
 
     elif opcode[0]=='\x6a':
         if bit==32:
-            return 'PUSH ',opcode[:]
+            ret=unpack_us1(opcode[1])
+            return 'PUSH '+hex(ret),opcode[2:]
         elif bit==64:
             pass
 
@@ -902,49 +871,56 @@ def asmgen(opcode,bit):
 
     elif opcode[0]=='\x78':
         if bit==32:
-            return 'xxx',opcode[:]
+            ret=unpack_s1(opcode[1])+2
+            return 'JNS $'+hex(ret),opcode[2:]
         elif bit==64:
             pass
 
 
     elif opcode[0]=='\x79':
         if bit==32:
-            return 'xxx',opcode[:]
+            ret=unpack_s1(opcode[1])+2
+            return 'JPE $'+hex(ret),opcode[2:]
         elif bit==64:
             pass
 
 
     elif opcode[0]=='\x7a':
         if bit==32:
-            return 'xxx',opcode[:]
+            ret=unpack_s1(opcode[1])+2
+            return 'JPO $'+hex(ret),opcode[2:]
         elif bit==64:
             pass
 
 
     elif opcode[0]=='\x7b':
         if bit==32:
-            return 'xxx',opcode[:]
+            ret=unpack_s1(opcode[1])+2
+            return 'JNGE $'+hex(ret),opcode[2:]
         elif bit==64:
             pass
 
 
     elif opcode[0]=='\x7c':
         if bit==32:
-            return 'xxx',opcode[:]
+            ret=unpack_s1(opcode[1])+2
+            return 'JGE $'+hex(ret),opcode[2:]
         elif bit==64:
             pass
 
 
     elif opcode[0]=='\x7d':
         if bit==32:
-            return 'xxx',opcode[:]
+            ret=unpack_s1(opcode[1])+2
+            return 'JLE $'+hex(ret),opcode[2:]
         elif bit==64:
             pass
 
 
     elif opcode[0]=='\x7e':
         if bit==32:
-            return 'xxx',opcode[:]
+            ret=unpack_s1(opcode[1])+2
+            return 'JG $'+hex(ret),opcode[2:]
         elif bit==64:
             pass
 
@@ -986,60 +962,56 @@ def asmgen(opcode,bit):
 
     elif opcode[0]=='\x84':
         if bit==32:
-            ret,ret_byte=ModRM32(opcode[1:],1,1,E=0)
-            return 'TEST '+ret,opcode[1+ret_byte:]
+            return Eb_Gb(opcode,'TEST',1)
         elif bit==64:
             pass
 
 
     elif opcode[0]=='\x85':
         if bit==32:
-            ret,ret_byte=ModRM32(opcode[1:],4,4,E=0)
-            return 'TEST '+ret,opcode[1+ret_byte:]
+            return Ev_Gv(opcode,'TEST',1)
         elif bit==64:
             pass
 
 
     elif opcode[0]=='\x86':
         if bit==32:
-            ret,ret_byte=ModRM32(opcode[1:],1,1,E=0)
-            return 'XCHG '+ret,opcode[1+ret_byte:]
+            return Eb_Gb(opcode,'XCHG',1)
         elif bit==64:
             pass
 
 
     elif opcode[0]=='\x87':
         if bit==32:
-            ret,ret_byte=ModRM32(opcode[1:],4,4,E=0)
-            return 'XCHG '+ret,opcode[1+ret_byte:]
+            return Ev_Gv(opcode,'XCHG',1)
         elif bit==64:
             pass
 
 
     elif opcode[0]=='\x88':
         if bit==32:
-            return 'xxx',opcode[:]
+            return Eb_Gb(opcode,'MOV',1)
         elif bit==64:
             pass
 
 
     elif opcode[0]=='\x89':
         if bit==32:
-            return 'xxx',opcode[:]
+            return Ev_Gv(opcode,'MOV',1)
         elif bit==64:
             pass
 
 
     elif opcode[0]=='\x8a':
         if bit==32:
-            return 'xxx',opcode[:]
+            return Gb_Eb(opcode,'MOV',1)
         elif bit==64:
             pass
 
 
     elif opcode[0]=='\x8b':
         if bit==32:
-            return 'xxx',opcode[:]
+            return Gv_Ev(opcode,'MOV',1)
         elif bit==64:
             pass
 
@@ -1186,7 +1158,7 @@ def asmgen(opcode,bit):
 
     elif opcode[0]=='\xa0':
         if bit==32:
-            ret=unpack_4(opcode[1:5])[0]
+            ret=unpack_us4(opcode[1:5])[0]
             return 'MOV AL,'+hex(ret),opcode[1+4:]
         elif bit==64:
             pass
@@ -1194,15 +1166,15 @@ def asmgen(opcode,bit):
 
     elif opcode[0]=='\xa1':
         if bit==32:
-            ret=unpack_4(opcode[1:5])[0]
-            return 'MOV EAX,'+hex(ret),opcode[1+4:]
+            ret=unpack_us4(opcode[1:5])
+            return 'MOV EAX,'+hex(ret),opcode[5:]
         elif bit==64:
             pass
 
 
     elif opcode[0]=='\xa2':
         if bit==32:
-            ret=unpack_4(opcode[1:5])[0]
+            ret=unpack_us4(opcode[1:5])[0]
             return 'MOV ['+hex(ret)+'],AL',opcode[5:]
         elif bit==64:
             pass
@@ -1210,7 +1182,7 @@ def asmgen(opcode,bit):
 
     elif opcode[0]=='\xa3':
         if bit==32:
-            ret=unpack_4(opcode[1:5])[0]
+            ret=unpack_us4(opcode[1:5])[0]
             return 'MOV ['+hex(ret)+'],EAX',opcode[5:]
         elif bit==64:
             pass
@@ -1246,14 +1218,16 @@ def asmgen(opcode,bit):
 
     elif opcode[0]=='\xa8':
         if bit==32:
-            return 'xxx',opcode[:]
+            ret=unpack_us1(opcode[1])
+            return 'TEST AL,'+hex(ret),opcode[2:]
         elif bit==64:
             pass
 
 
     elif opcode[0]=='\xa9':
         if bit==32:
-            return 'xxx',opcode[:]
+            ret=unpack_us4(opcode[1:5])
+            return 'TEST EAX,'+hex(ret),opcode[5:]
         elif bit==64:
             pass
 
@@ -1366,56 +1340,64 @@ def asmgen(opcode,bit):
 
     elif opcode[0]=='\xb8':
         if bit==32:
-            return 'xxx',opcode[:]
+            ret=unpack_us4(opcode[1:5])
+            return 'MOV EAX,'+hex(ret),opcode[5:]
         elif bit==64:
             pass
 
 
     elif opcode[0]=='\xb9':
         if bit==32:
-            return 'xxx',opcode[:]
+            ret=unpack_us4(opcode[1:5])
+            return 'MOV ECX,'+hex(ret),opcode[5:]
         elif bit==64:
             pass
 
 
     elif opcode[0]=='\xba':
         if bit==32:
-            return 'xxx',opcode[:]
+            ret=unpack_us4(opcode[1:5])
+            return 'MOV EDX,'+hex(ret),opcode[5:]
         elif bit==64:
             pass
 
 
     elif opcode[0]=='\xbb':
         if bit==32:
-            return 'xxx',opcode[:]
+            ret=unpack_us4(opcode[1:5])
+            return 'MOV EBX,'+hex(ret),opcode[5:]
         elif bit==64:
             pass
 
 
     elif opcode[0]=='\xbc':
         if bit==32:
-            return 'xxx',opcode[:]
+            ret=unpack_us4(opcode[1:5])
+            return 'MOV ESP,'+hex(ret),opcode[5:]
         elif bit==64:
             pass
 
 
     elif opcode[0]=='\xbd':
         if bit==32:
-            return 'xxx',opcode[:]
+            ret=unpack_us4(opcode[1:5])
+            return 'MOV EBP,'+hex(ret),opcode[5:]
         elif bit==64:
             pass
 
 
     elif opcode[0]=='\xbe':
         if bit==32:
-            return 'xxx',opcode[:]
+            ret=unpack_us4(opcode[1:5])
+            return 'MOV ESI,'+hex(ret),opcode[5:]
         elif bit==64:
             pass
 
 
     elif opcode[0]=='\xbf':
         if bit==32:
-            return 'xxx',opcode[:]
+            ret=unpack_us4(opcode[1:5])
+            return 'MOV EDI,'+hex(ret),opcode[5:]
         elif bit==64:
             pass
 
@@ -1479,7 +1461,9 @@ def asmgen(opcode,bit):
 
     elif opcode[0]=='\xc8':
         if bit==32:
-            return 'xxx',opcode[:]
+            ret1=unpack_us2(opcode[1:3])
+            ret2=unpack_us1(opcode[3])
+            return 'ENTER '+hex(ret1)+','+hex(ret2),opcode[4:]
         elif bit==64:
             pass
 
@@ -1493,7 +1477,8 @@ def asmgen(opcode,bit):
 
     elif opcode[0]=='\xca':
         if bit==32:
-            return 'xxx',opcode[:]
+            ret=unpack_us2(opcode[1:3])
+            return 'RETF '+hex(ret),opcode[3:]
         elif bit==64:
             pass
 
@@ -1514,7 +1499,8 @@ def asmgen(opcode,bit):
 
     elif opcode[0]=='\xcd':
         if bit==32:
-            return 'xxx',opcode[:]
+            ret=unpack_us1(opcode[1])
+            return 'INT ',opcode[2:]
         elif bit==64:
             pass
 
@@ -1701,7 +1687,7 @@ def asmgen(opcode,bit):
             pass
 
 
-    elif opcode[0]==0xe6:
+    elif opcode[0]=='\xe6':
         if bit==32:
             ret=unpack_s1(opcode[1])
             return 'OUT '+hex(ret)+',EAX',opcode[2:]
@@ -1709,175 +1695,178 @@ def asmgen(opcode,bit):
             pass
 
 
-    elif opcode[0]==0xe7:
+    elif opcode[0]=='\xe7':
         if bit==32:
             return 'xxx',opcode[:]
         elif bit==64:
             pass
 
 
-    elif opcode[0]==0xe8:
+    elif opcode[0]=='\xe8':
+        if bit==32:
+            ret=unpack_us4(opcode[1:5])
+            return 'CALL '+hex(ret),opcode[5:]
+        elif bit==64:
+            pass
+
+
+    elif opcode[0]=='\xe9':
+        if bit==32:
+            ret=unpack_us4(opcode[1:5])
+            return 'JMP near '+hex(ret),opcode[5:]
+        elif bit==64:
+            pass
+
+
+    elif opcode[0]=='\xea':
         if bit==32:
             return 'xxx',opcode[:]
         elif bit==64:
             pass
 
 
-    elif opcode[0]==0xe9:
+    elif opcode[0]=='\xeb':
         if bit==32:
-            return 'xxx',opcode[:]
+            ret=unpack_us1(opcode[1])+2
+            return 'JMP short '+hex(ret),opcode[2:]
         elif bit==64:
             pass
 
 
-    elif opcode[0]==0xea:
-        if bit==32:
-            return 'xxx',opcode[:]
-        elif bit==64:
-            pass
-
-
-    elif opcode[0]==0xeb:
-        if bit==32:
-            return 'xxx',opcode[:]
-        elif bit==64:
-            pass
-
-
-    elif opcode[0]==0xec:
+    elif opcode[0]=='\xec':
         if bit==32:
             return 'IN AL,DX',opcode[1:]
         elif bit==64:
             pass
 
 
-    elif opcode[0]==0xed:
+    elif opcode[0]=='\xed':
         if bit==32:
             return 'IN EAX,DX',opcode[1:]
         elif bit==64:
             pass
 
 
-    elif opcode[0]==0xee:
+    elif opcode[0]=='\xee':
         if bit==32:
             return 'OUT DX,AL',opcode[1:]
         elif bit==64:
             pass
 
 
-    elif opcode[0]==0xef:
+    elif opcode[0]=='\xef':
         if bit==32:
             return 'OUT DX,EAX',opcode[1:]
         elif bit==64:
             pass
 
 
-    elif opcode[0]==0xf0:
+    elif opcode[0]=='\xf0':
         if bit==32:
             return 'xxx',opcode[:]
         elif bit==64:
             pass
 
 
-    elif opcode[0]==0xf1:
+    elif opcode[0]=='\xf1':
         if bit==32:
             return 'xxx',opcode[:]
         elif bit==64:
             pass
 
 
-    elif opcode[0]==0xf2:
+    elif opcode[0]=='\xf2':
         if bit==32:
             return 'xxx',opcode[:]
         elif bit==64:
             pass
 
 
-    elif opcode[0]==0xf3:
+    elif opcode[0]=='\xf3':
         if bit==32:
             return 'xxx',opcode[:]
         elif bit==64:
             pass
 
 
-    elif opcode[0]==0xf4:
+    elif opcode[0]=='\xf4':
         if bit==32:
             return 'HLT',opcode[1:]
         elif bit==64:
             pass
 
 
-    elif opcode[0]==0xf5:
+    elif opcode[0]=='\xf5':
         if bit==32:
             return 'CMC',opcode[1:]
         elif bit==64:
             pass
 
 
-    elif opcode[0]==0xf6:
+    elif opcode[0]=='\xf6':
         if bit==32:
             return 'xxx',opcode[:]
         elif bit==64:
             pass
 
 
-    elif opcode[0]==0xf7:
+    elif opcode[0]=='\xf7':
         if bit==32:
             return 'xxx',opcode[:]
         elif bit==64:
             pass
 
 
-    elif opcode[0]==0xf8:
+    elif opcode[0]=='\xf8':
         if bit==32:
             return 'CLC',opcode[1:]
         elif bit==64:
             pass
 
 
-    elif opcode[0]==0xf9:
+    elif opcode[0]=='\xf9':
         if bit==32:
             return 'STC',opcode[1:]
         elif bit==64:
             pass
 
 
-    elif opcode[0]==0xfa:
+    elif opcode[0]=='\xfa':
         if bit==32:
             return 'CLI',opcode[1:]
         elif bit==64:
             pass
 
 
-    elif opcode[0]==0xfb:
+    elif opcode[0]=='\xfb':
         if bit==32:
             return 'STI',opcode[1:]
         elif bit==64:
             pass
 
 
-    elif opcode[0]==0xfc:
+    elif opcode[0]=='\xfc':
         if bit==32:
             return 'CLD',opcode[1:]
         elif bit==64:
             pass
 
 
-    elif opcode[0]==0xfd:
+    elif opcode[0]=='\xfd':
         if bit==32:
             return 'STD',opcode[1:]
         elif bit==64:
             pass
 
 
-    elif opcode[0]==0xfe:
+    elif opcode[0]=='\xfe':
         if bit==32:
             return 'xxx',opcode[:]
         elif bit==64:
             pass
 
 
-    elif opcode[0]==0xff:
+    elif opcode[0]=='\xff':
         if bit==32:
             return 'xxx',opcode[:]
         elif bit==64:

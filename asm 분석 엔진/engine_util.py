@@ -39,7 +39,7 @@ def ModRM32(opcode,r1,r2,E=0):#여기서 opcode는 앞에 명령어 때고서 넘긴다
             plus = ''
 
     elif Mod == '10' :
-        t1=opcode[1+has_sib:1+has_sib+3]
+        t1=opcode[1+has_sib:1+has_sib+4]
         t2=struct.unpack('<i',t1)[0]
         plus=hex(t2)
         if t2>0:
@@ -157,7 +157,7 @@ def ModRM32(opcode,r1,r2,E=0):#여기서 opcode는 앞에 명령어 때고서 넘긴다
             reg1='EDI'
 
     if Mod == '00' and RM == '101':
-        t1=opcode[1+has_sib:1+has_sib+3]
+        t1=opcode[1+has_sib:1+has_sib+4]
         t1=struct.unpack('<i',t1)[0]
         t2=hex(t1)
         if t2>0:
@@ -255,7 +255,7 @@ def ModRM32(opcode,r1,r2,E=0):#여기서 opcode는 앞에 명령어 때고서 넘긴다
     elif Mod=='01':
         ret_byte=ret_byte+1
     elif Mod=='10':
-        ret_byte-ret_byte+4
+        ret_byte=ret_byte+4
             
 
 
@@ -340,3 +340,25 @@ def sib(s,Mod): #reg1 * reg1_x + reg2 형태를 띄게 된다.
 
     return reg1 + reg1_x + plus +reg2
    
+
+def Eb_Gb(opcode,opcode_name,opcode_byte):  #opcode_name은 opcode의 명령어 명
+                                            #opcode_byte는 opcode의 명령어의 앞부분 길이
+    ret,ret_byte=ModRM32(opcode[1:],1,1,E=0)
+    return opcode_name+' '+ret,opcode[opcode_byte+ret_byte:]
+
+
+def Ev_Gv(opcode,opcode_name,opcode_byte):
+    ret,ret_byte=ModRM32(opcode[1:],4,4,E=0)
+    return opcode_name+' '+ret,opcode[opcode_byte+ret_byte:]
+
+def Gb_Eb(opcode,opcode_name,opcode_byte):
+    ret,ret_byte=ModRM32(opcode[1:],1,1,E=1)
+    return opcode_name+' '+ret,opcode[opcode_byte+ret_byte:]
+
+
+def Gv_Ev(opcode,opcode_name,opcode_byte):
+    ret,ret_byte=ModRM32(opcode[1:],4,4,E=1)
+    return opcode_name+' '+ret,opcode[opcode_byte+ret_byte:]
+
+
+    
