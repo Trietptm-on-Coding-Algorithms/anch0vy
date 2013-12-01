@@ -12,10 +12,10 @@ import re
 
 word_list=[]
 mean_list=[]
-f=open('D:\\dic.txt','w')
+f=open('D:\\dic_start_1.txt','w')
 
-for y in range(1,196):
-        page='http://endic.naver.com/rank.nhn?pubLev=2&firstWord=all&posp=all&pageNo='+str(y)
+for y in range(1,434):
+        page='http://endic.naver.com/rank.nhn?pubLev=1&firstWord=all&posp=all&pageNo='+str(y)
         p=urllib.urlopen(page)
         p=p.read()
         #쓸대없는 애들 제거
