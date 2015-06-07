@@ -1,0 +1,149 @@
+@import url(http://fonts.googleapis.com/earlyaccess/hanna.css);
+
+#song_container{
+	text-align: center;
+}
+
+#playerLayer{
+}
+
+#chennels{
+	margin-left: 1em;
+	margin-right: 1em;
+}
+.chennel{
+	width: 33%;
+	margin-bottom:1em;
+}
+
+
+
+pre{
+	font-family: 'Hanna',serif;
+}
+
+.pagenumber{
+	text-align: center;
+	margin-top:1em;
+}
+.pagenumber a{
+	color:rgb(143,154,156);
+}
+
+.avatar{
+	width: 6.25em;
+	border-radius: 0.35em;
+	margin:0 auto;
+}
+
+body,html{
+	left:0;
+	top:0;
+	/*height:100%;*/
+	margin:0;
+	background-color: rgb(101,114,122);
+	background-image:url(../img/pattern.png);
+	background-repeat: repeat;
+}
+
+#back{
+	width: 800px;
+	height: 100%;
+	margin: 0 auto;
+	background-color: rgb(143,154,156);
+}
+
+#main{
+	/*margin-top: 2em !important;*/
+	height: 100%;
+	width: 780px;
+	margin: 0 auto;
+	background-color: rgb(190,195,188);
+}
+
+#header{
+	width:90%;
+	border-radius: 0.35em;
+	margin:0 auto;
+	top:1em;
+	position:relative;
+	text-align: center;
+	/*background-color:  rgb(0,180,204);*/
+}
+
+#content{
+	/*margin-top: 2em !important;*/
+	height: 100%;
+	width: 760px;
+	margin: 0 auto;
+	margin-bottom:1em;
+	background-color: rgb(230,232,227);
+}
+
+.article{
+	padding-top:1em;
+	margin-left:1em;
+	margin-right:1em;
+	border-bottom: solid 0.3em rgb(215,218,207);
+	text-align: center;
+}
+
+.image img{
+	width:100%;
+}
+
+.menu{
+	border-top: solid 0.1em rgb(215,218,207);
+	border-bottom: solid 0.1em rgb(215,218,207);
+	padding-top: 0.1em;
+	padding-bottom: 0.1em;
+	margin-bottom:0.5em;
+}
+
+.menu a{
+	text-decoration: none;
+	color:black;
+}
+
+a{
+	text-decoration: none;
+	color:rgb(101,114,122);
+	text-shadow: 0 0 10px rgba(190, 195, 188,1);
+	-moz-text-shadow: 0 0 10px rgba(190, 195, 188,1);
+	-webkit-text-shadow: 0 0 10px rgba(190, 195, 188,1);
+	font-smooth:always ;
+}
+
+
+.h0{
+	font-size: 300%;
+}
+
+.h1 {
+    font-size: 250%;
+}
+
+.h2 {
+    font-size: 200%;
+}
+
+.h3 {
+	font-size: 150%;
+}
+
+.title{
+	margin-top:0;
+	margin-bottom: 0.125em !important;
+}
+
+@font-face {
+  font-family: 'jua';
+  font-style1: normal;
+  src: url("../fonts/BM-JUA.eot"),url("../fonts/BM-JUA.otf") format('opentype');
+}
+
+.jua {
+	font-family:jua;
+}
+
+

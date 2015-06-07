@@ -1,0 +1,984 @@
+<!doctype html>
+<html>
+ 	
+
+
+
+<head>
+	
+
+
+
+  
+	
+	
+																																														   	<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=8" />
+<meta name='plink' content='http://music.daum.net/onair/radio/genre?tagId=2'/>
+<title>12시에 만납시다 김필원입니다 선곡표 | Daum 뮤직 :: 언제 어디서나 Music on Daum</title>
+
+	
+			
+																		
+																										
+																																
+										<meta property="og:title" content="12시에 만납시다 김필원입니다 선곡표 2014-12-26 | Daum 뮤직 :: 언제 어디서나 Music on Daum"> 
+        <meta property="og:image" content="http://cfile38.uf.daum.net/image/25034F4A5354E12F0C457E">
+    		    <meta property="og:site_name" content="Daum 뮤직">
+<meta property="og:description" content="방금 전 TV와 라디오에서 나온 그 노래가 궁금하다면?! 이제 Daum뮤직 - 방금그곡 에서 실시간으로 확인하세요. 혹은 다음 검색창에 '방금그곡'을 입력하세요!"/> 
+<meta name="keywords" content="다음뮤직, 음악, 방금그곡, 음악듣기, 최신음악, 스트리밍, 인기가요, 뮤직비디오, 앨범, 플레이어, MP3 다운로드" /> 
+
+<link type="text/css" rel="stylesheet" href="http://s1.daumcdn.net/svc/attach/U0301/cssjs/music/20141224163636/css/common.css" />
+<script type="text/javascript" src="http://s1.daumcdn.net/svc/attach/U0301/cssjs/music/20141224163636/js/core.js"></script>
+<link type="text/css" rel="stylesheet" href="http://s1.daumcdn.net/svc/attach/U0301/cssjs/music/20141224163636/css/reset.css" />
+
+
+<!--[if IE 6]>
+<link rel="stylesheet" href="http://s1.daumcdn.net/svc/attach/U0301/cssjs/music/20141224163636/css/ie6.css" type="text/css">
+<![endif]-->
+
+<script type="text/javascript" src="http://s1.daumcdn.net/svc/original/U03/cssjs/pcsocialshare/pcSocialshare-1.5.0.min.js"></script>
+
+<link type="text/css" rel="stylesheet" href="http://s1.daumcdn.net/svc/attach/U0301/cssjs/music/20141224163636/css/onair.css" />
+<script type="text/javascript" src="http://s1.daumcdn.net/svc/original/U03/cssjs/jquery/jquery-1.11.0.js"></script>
+<script type="text/javascript">
+jQuery.noConflict();
+</script>
+<script type="text/javascript" src="http://s1.daumcdn.net/svc/attach/U0301/cssjs/music/20141224163636/js/min.onair.js"></script>
+
+
+
+</head>
+<body>
+<div id="daumIndex">
+	<a href="#daumGnb" rel="bookmark">뮤직 메뉴 바로가기</a>
+	<a href="#daumContent" rel="bookmark">뮤직 내용 바로가기</a>
+</div>
+
+
+
+
+ <div id="daumAodLuncherWrap"></div>
+<div id="daumDownloaderWrap"><div id="DownloaderLauncher"></div></div>
+<script type="text/javascript">
+	daum.Music.AodPlayer.init( "daumAodLuncherWrap" );
+	daumMusic.DownLoader.embedSWF( "DownloaderLauncher", daum.Music.Downloader.lunched, daum.Music.Downloader.click, daum.Music.Downloader.cancel );
+</script>
+
+<div id="daumWrap" class="music_type1">
+	<div id="wrapMinidaum"></div>
+	<!-- daumHead -->
+	<div id="daumHead">
+	<h1>
+		<a href="/" id="daumServiceLogo"  title="뮤직 메인페이지로 가기"><span class="ir_wa">뮤직</span></a>
+	</h1>
+	<h2 class="screen_out">관련서비스</h2>
+	<ul id="daumRelServices">
+		<li><a href="http://webtoon.daum.net/" target="_self" title="만화 메인페이지로 가기" class="link_services link_services1"><span class="ir_wa">만화</span></a></li>
+		<li><a href="http://movie.daum.net/" target="_self"  title="영화 메인페이지로 가기" class="link_services link_services2"><span class="ir_wa">영화</span></a></li>
+		<li><a href="http://media.daum.net/entertain/" target="_self" title="연예 메인페이지로 가기" class="link_services link_services3"><span class="ir_wa">연예</span></a></li>
+	</ul>		
+	
+	
+<script type="text/javascript">
+var topPromotionSectionUseValue = true;
+var topPromotionSectionItems = [
+{
+	width : "",
+	title : "",
+	src : "",
+	link : ""
+}
+,{
+	width : "",
+	title : "",
+	src : "",
+	link : ""
+}
+,{
+	width : "",
+	title : "",
+	src : "",
+	link : ""
+}
+,{
+	width : "",
+	title : "",
+	src : "",
+	link : ""
+}
+,{
+	width : "",
+	title : "",
+	src : "",
+	link : ""
+}
+];
+</script>
+	
+	<h2 class="screen_out">검색</h2>
+	<form id="daumSearch" name="daumSearch" onsubmit="return checkSubmit(this);">
+		<fieldset class="fld_inside opt_on"><!--  내부검색 fld_inside 추가 --><!--  내부검색 옵션이 있을경우 opt_on 추가 -->
+			<legend class="screen_out">검색</legend>
+			<div class="box_searchbar" id="box_searchbar"><!-- 입력창 선택시 search_on 추가  -->
+				<input type="text" class="tf_keyword" id="qTop" name="query" value="" title="검색어 입력" autocomplete="off" spellcheck="false">
+				<input type="hidden" name="referer" value="music">
+				<button id="daumBtnSearch" class="ico_search btn_search" type="submit"><span class="ir_wa">검색</span></button>
+			</div>
+		</fieldset>
+		
+		<!--  서제스트 썸네일 미리보기형 -->
+	</form>
+	
+	 
+	<h2 class="screen_out">뮤직 메인메뉴</h2> 	
+	<div id="daumGnb">
+		<ul class="gnb_music">
+			<li><a class="link_gnb link_gnb1" href="/"  title="뮤직홈"><span class="ir_wa">뮤직홈</span></a></li><!-- 현재페이지에 on클래스 추가  -->
+			<li><a href="/chart/" class="link_gnb link_gnb2" title="차트"><span class="ir_wa">차트</span></a></li>
+			<li><a href="/genre/" class="link_gnb link_gnb3" title="장르뮤직"><span class="ir_wa">장르뮤직</span></a></li>
+			<li><a href="/musicbar/" class="link_gnb link_gnb4" title="뮤직 BAR"><span class="ir_wa">뮤직 BAR</span></a></li>
+			<li class="on"><a href="/onair/timeline" class="link_gnb link_gnb5"  title="방금그곡"><span class="ir_wa">방금그곡</span></a></li> <!-- 2014-03-20 추가 -->
+			<li><a href="/vclip/" class="link_gnb link_gnb6"  title="뮤비"><span class="ir_wa">뮤비</span></a></li>
+			<li><a href="/event/" class="link_gnb link_gnb7" title="이벤트"><span class="ir_wa">이벤트</span></a></li>
+			<li><a href="/my/top" class="link_gnb link_gnb8" title="MY 뮤직"><span class="ir_wa">MY 뮤직</span></a></li>
+		</ul>
+		<ul class="gnb_with">
+			<li><a href="#" onclick="daum.Music.AodPlayer.add();return false;" title="플레이어" class="link_gnb link_gnb1"><span class="ir_wa">플레이어</span></a></li>
+		</ul>
+		<a href="http://search.daum.net/search?w=tot&amp;DA=YZRR&amp;t__nil_searchbox=btn&amp;sug=&amp;sq=&amp;o=&amp;q=%EB%8B%A4%EC%9D%8C%EB%AE%A4%EC%A7%81" target="_blank" class="link_app"  title="뮤직앱">뮤직앱 설치</a>
+	</div>
+				
+	<div id="SponsorBarWrap" class="gnb_bnr" style="border-bottom:0 none"> 
+		<a href="" class="ad_bar">광고 배너</a> 
+		<a href="" class="ad_object" style="bottom:0;">광고 배너</a>
+		<script type="text/javascript">
+var ad_bar  = [ 
+					{"src":"http://cfile40.uf.daum.net/image/2312913C54979D98196E6B", "link":"http://music.daum.net/musicbar/musicbar/detail?menu_id=1&board_id=5386"}
+				,		{"src":"http://cfile177.uf.daum.net/image/21083D3A54979DA132C2CE", "link":"http://music.daum.net/musicbar/musicbar/detail?menu_id=1&board_id=5386"}
+				,		{"src":"http://cfile181.uf.daum.net/image/241DE441548FEA791EFA39", "link":"http://music.daum.net/musicbar/musicbar/detail?menu_id=4&board_id=5387"}
+				,		{"src":"http://cfile83.uf.daum.net/image/273EA733548A35452D29DD", "link":"http://music.daum.net/musicbar/musicbar/detail?menu_id=4&board_id=5379"}
+				,		{"src":"http://cfile137.uf.daum.net/image/22521634548A3550056CFA", "link":"http://music.daum.net/musicbar/musicbar/detail?menu_id=4&board_id=5383"}
+	];
+var ad_object  = [ 
+					{"src":"http://cfile101.uf.daum.net/image/2575813854979D9C29A7BA", "link":"http://music.daum.net/musicbar/musicbar/detail?menu_id=1&board_id=5386"}
+				,		{"src":"http://cfile40.uf.daum.net/image/2455FA3754979DA72D45F7", "link":"http://music.daum.net/musicbar/musicbar/detail?menu_id=1&board_id=5386"}
+				,		{"src":"http://cfile38.uf.daum.net/image/227A2044548FEA7F0AEDFD", "link":"http://music.daum.net/musicbar/musicbar/detail?menu_id=4&board_id=5387"}
+				,		{"src":"http://cfile5.uf.daum.net/image/2710F436548A354A34EBCC", "link":"http://music.daum.net/musicbar/musicbar/detail?menu_id=4&board_id=5379"}
+				,		{"src":"http://cfile2.uf.daum.net/image/241DCD3C548A35541B584D", "link":"http://music.daum.net/musicbar/musicbar/detail?menu_id=4&board_id=5383"}
+	];
+</script>
+    </div>
+	
+<script type="text/javascript">
+
+domReady(function(){
+    var bannerIdx = 0; 
+    var rnd = ad_bar.length; 
+   	bannerIdx = parseInt(Math.random()*rnd,10);
+
+	var banner_bar = daum.$$("#SponsorBarWrap a")[0]; 
+	var banner_obj = daum.$$("#SponsorBarWrap a")[1];
+	
+	console.log(banner_obj);
+	
+	if( !ad_bar[bannerIdx] ){
+		bannerIdx = 0; 
+	}
+
+	banner_bar.href  = ad_bar[bannerIdx].link; 
+	banner_bar.style.backgroundImage = "url(" + ad_bar[bannerIdx].src +")";
+	banner_obj.href  = ad_object[bannerIdx].link;
+	banner_obj.style.backgroundImage = "url(" + ad_object[bannerIdx].src +")";
+//	daum.Element.setPngOpacity(banner_obj, ad_object[bannerIdx].src, "image");
+	
+	if( daum.Browser.ie6 ){
+		daum.Element.setStyle(banner_obj, "background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"+ ad_object[bannerIdx].src+"', sizingMethod='crop')");
+	}
+});
+
+	// extended gnb menu
+	var toggleExtendedMenu = function(el) {
+		var parent = el;
+		if(daum.Element.hasClassName(parent, "sub_on")) {
+			daum.Element.removeClassName(parent, "sub_on");
+		} else {
+			daum.Element.addClassName(parent, "sub_on");
+		}
+	};
+	
+
+// 연관서비스 운영
+(function(){
+	if(!!topPromotionSectionUseValue) {
+    	var promotionIdx = 0;
+		var tempArr = [];
+		
+		for(var i=0,len=topPromotionSectionItems.length; i<len; i++) {
+			if(topPromotionSectionItems[i].title !== "" && topPromotionSectionItems[i].title.indexOf("제목이") < 0) {
+				tempArr.push(topPromotionSectionItems[i])
+			}
+		}
+		
+    	var rnd = tempArr.length;
+    	promotionIdx = parseInt(Math.random()*rnd,10);
+    	
+    	var promotionSectionWrap = daum.$("daumRelServices");
+    	
+    	if( !!tempArr[promotionIdx] ){
+        	var width = tempArr[promotionIdx].width || 74;
+        	var temp = new daum.Template('<li><a href="#{href}" title="#{title}" target="_self" class="link_services link_services4"><img src="#{src}" width="74" height="24" alt="#{title}" /></a></li>');
+			
+			var el = temp.toElement({
+    			title : tempArr[promotionIdx].title,   
+    			href : tempArr[promotionIdx].link,
+    			src : tempArr[promotionIdx].src  
+            });  
+            promotionSectionWrap.appendChild(el);	
+    	}
+	}
+})();
+
+</script>
+
+
+		
+	</div>
+	<!-- // daumHead -->
+	<hr />
+
+	<!-- daumContent -->
+	<div id="daumContent" class="cont_now">
+		<h2 class="screen_out">Daum 뮤직</h2>
+		<!-- cSub -->
+		<div id="cSub"></div>
+		<!-- // cSub -->
+		<!-- cMain -->
+		<div id="cMain">
+			<div id="mTop"></div><!--// mTop -->
+			<div id="mLeft"></div><!--// mLeft -->
+			<div id="mCenter">			<ul class="tab_now">
+				<li ><a href="/onair/timeline" class="link_tab link_now" title="방금 그 곡">방금 그 곡</a></li>
+				<li class="on"><a href="/onair/radio/recomm" class="link_tab link_radio" title="라디오 선곡표">라디오 선곡표</a></li>
+				<li ><a href="/onair/tv" class="link_tab link_bgm" title="TV BGM">TV BGM</a></li>
+			</ul>
+<h3 class="screen_out">라디오 선곡표</h3>
+
+<div class="now_detail">
+	<ul class="tab_sort tab_radio">
+	<li ><a href="/onair/radio/recomm" class="link_tab link_recomm" title="추천">추천</a></li> <!-- on 클래스를 추가시 활성화 -->
+	<li class="on"><a href="/onair/radio/genre" class="link_tab link_genre" title="장르별">장르별</a></li> <!-- on 클래스를 추가시 활성화 -->
+	<li ><a href="/onair/radio/channel" class="link_tab link_channel" title="채널별">채널별</a></li> <!-- on 클래스를 추가시 활성화 -->
+</ul>	<h4 class="screen_out">장르별</h4>
+	<div id="ChannelWrap" class="detail_sort"> <!-- 다른 장르/채널 보기에 마우스 오버 시 sort_on클래스 추가 -->
+		<div class="info_radio info_genre">
+			<strong class="tit_channel song_ko">가요</strong>
+			<span class="num_program">18<span class="txt_now">개의 프로그램이 있습니다</span></span>
+			<a id="btnViewCannel" href="#none" class="btn_now btn_genre">다른 장르 보기</a>
+			<div id="listChannelWrap" class="radio_channel">
+				<ul  class="list_channel">
+											<li class="on"><a href="/onair/radio/genre?tagId=2" class="link_broadcast">가요</a></li>
+											<li ><a href="/onair/radio/genre?tagId=6" class="link_broadcast">팝</a></li>
+											<li ><a href="/onair/radio/genre?tagId=9" class="link_broadcast">가요 + 팝</a></li>
+											<li ><a href="/onair/radio/genre?tagId=3" class="link_broadcast">영화음악</a></li>
+											<li ><a href="/onair/radio/genre?tagId=14" class="link_broadcast">7080 </a></li>
+											<li ><a href="/onair/radio/genre?tagId=7" class="link_broadcast">클래식</a></li>
+											<li ><a href="/onair/radio/genre?tagId=8" class="link_broadcast">성인가요</a></li>
+											<li ><a href="/onair/radio/genre?tagId=13" class="link_broadcast">CCM</a></li>
+											<li ><a href="/onair/radio/genre?tagId=5" class="link_broadcast">기타</a></li>
+									</ul>
+			</div>
+		</div>
+		
+		
+		
+		<div class="radio_name">
+			<div id="swiper" class="slide_radio group_slide" style="width:810px"> <!-- left 값 -810px씩 조절하여 슬라이드 효과 -->
+				
+			</div>
+		</div>
+		
+	</div>
+	
+	
+    <div id="programListPagingWrap" class="paging_now">
+	<span class="inner_paging">
+		<button type="button" class="btn_now btn_prev">이전</button>
+		<span class="paging_num" id="pagingToggle">
+		</span>
+		<button type="button" class="btn_now btn_next">다음</button>
+	</span>
+</div>	
+	    
+    <script type="text/javascript">
+    jQuery( "#btnViewCannel" ).mouseover(function() {
+      jQuery( "#ChannelWrap" ).addClass( "sort_on" );
+    });
+    
+    jQuery( "#listChannelWrap" ).mouseleave(function() {
+    	console.log(this);
+      jQuery( "#ChannelWrap" ).removeClass( "sort_on" );
+    });
+    
+	
+	      var programListJSON = [		                    
+    { items :[         	    	{"programId" : "749",
+    	"imageSrc" : "http://cfile188.uf.daum.net/image/256A9147532AB2E913CD11",
+    	"programMasterName" : "12시에 만납시다 김필원입니다",
+    	"description" : "",
+    	"channelName" : "CBS 음악 FM",
+    	"channelId" : "821",
+    	"channelType" : "4",
+    	"broadcastTime" : "1200",
+		"channelEngName" : "cbsmusicfm"
+    	}                        ,	    	{"programId" : "1481",
+    	"imageSrc" : "http://cfile140.uf.daum.net/image/261E183353323A5027AE81",
+    	"programMasterName" : "정오의 희망곡 김신영입니다",
+    	"description" : "",
+    	"channelName" : "MBC FM4U",
+    	"channelId" : "831",
+    	"channelType" : "4",
+    	"broadcastTime" : "1200",
+		"channelEngName" : "mbcfm4u"
+    	}                        ,	    	{"programId" : "347",
+    	"imageSrc" : "http://cfile188.uf.daum.net/image/246DB23853323A6E0E6752",
+    	"programMasterName" : "최화정의 파워타임",
+    	"description" : "",
+    	"channelName" : "SBS 파워 FM",
+    	"channelId" : "835",
+    	"channelType" : "4",
+    	"broadcastTime" : "1200",
+		"channelEngName" : "sbspw"
+    	}                        ,	    	{"programId" : "1595",
+    	"imageSrc" : "http://cfile188.uf.daum.net/image/2558A047532AB39B20AB1A",
+    	"programMasterName" : "이소라의 가요광장",
+    	"description" : "",
+    	"channelName" : "KBS 쿨 FM",
+    	"channelId" : "826",
+    	"channelType" : "4",
+    	"broadcastTime" : "1200",
+		"channelEngName" : "kbs2fm"
+    	}                        ,	    	{"programId" : "1563",
+    	"imageSrc" : "http://cfile90.uf.daum.net/image/2221213A5332544D011D8C",
+    	"programMasterName" : "이세준, 최재훈의 도시락쇼",
+    	"description" : "",
+    	"channelName" : "SBS 러브 FM",
+    	"channelId" : "834",
+    	"channelType" : "4",
+    	"broadcastTime" : "1210",
+		"channelEngName" : "sbslove"
+    	}                        ,	    	{"programId" : "114",
+    	"imageSrc" : "http://cfile80.uf.daum.net/image/2421614A533B923010378D",
+    	"programMasterName" : "강원래의 노래선물",
+    	"description" : "",
+    	"channelName" : "KBS 사랑의소리",
+    	"channelId" : "828",
+    	"channelType" : "4",
+    	"broadcastTime" : "1210",
+		"channelEngName" : "kbslove"
+    	}                        ,	    	{"programId" : "295",
+    	"imageSrc" : "http://cfile140.uf.daum.net/image/253DAB4A532AB3152B1E10",
+    	"programMasterName" : "박승화의 가요속으로",
+    	"description" : "",
+    	"channelName" : "CBS 음악 FM",
+    	"channelId" : "821",
+    	"channelType" : "4",
+    	"broadcastTime" : "1600",
+		"channelEngName" : "cbsmusicfm"
+    	}                        ,	    	{"programId" : "1482",
+    	"imageSrc" : "http://cfile20.uf.daum.net/image/24470C39533253830F3AE6",
+    	"programMasterName" : "오후의 발견, 김현철입니다",
+    	"description" : "",
+    	"channelName" : "MBC FM4U",
+    	"channelId" : "831",
+    	"channelType" : "4",
+    	"broadcastTime" : "1600",
+		"channelEngName" : "mbcfm4u"
+    	}                        ,	    	{"programId" : "368",
+    	"imageSrc" : "http://cfile190.uf.daum.net/image/21090838533254A122CB54",
+    	"programMasterName" : "김창렬의 올드스쿨",
+    	"description" : "",
+    	"channelName" : "SBS 파워 FM",
+    	"channelId" : "835",
+    	"channelType" : "4",
+    	"broadcastTime" : "1600",
+		"channelEngName" : "sbspw"
+    	}                        ,	    	{"programId" : "852",
+    	"imageSrc" : "http://cfile138.uf.daum.net/image/2175D236533254B2085767",
+    	"programMasterName" : "박소현의 러브게임",
+    	"description" : "",
+    	"channelName" : "SBS 파워 FM",
+    	"channelId" : "835",
+    	"channelType" : "4",
+    	"broadcastTime" : "1800",
+		"channelEngName" : "sbspw"
+    	}                        ,	    	{"programId" : "199",
+    	"imageSrc" : "http://cfile136.uf.daum.net/image/233C7B49533240F316F7F7",
+    	"programMasterName" : "사랑하기 좋은 날 이금희입니다",
+    	"description" : "",
+    	"channelName" : "KBS 쿨 FM",
+    	"channelId" : "826",
+    	"channelType" : "4",
+    	"broadcastTime" : "1800",
+		"channelEngName" : "kbs2fm"
+    	}                        ,	    	{"programId" : "1438",
+    	"imageSrc" : "http://cfile140.uf.daum.net/image/23192548533B66712F9434",
+    	"programMasterName" : "박영진, 박지선의 명랑특급",
+    	"description" : "",
+    	"channelName" : "SBS 러브 FM",
+    	"channelId" : "834",
+    	"channelType" : "4",
+    	"broadcastTime" : "1805",
+		"channelEngName" : "sbslove"
+    	}        	
+    	]
+    }                ,        
+    { items :[         	    	{"programId" : "1586",
+    	"imageSrc" : "http://cfile4.uf.daum.net/image/2223BC3F53716D6F06EE3F",
+    	"programMasterName" : "써니의 FM데이트",
+    	"description" : "",
+    	"channelName" : "MBC FM4U",
+    	"channelId" : "831",
+    	"channelType" : "4",
+    	"broadcastTime" : "2000",
+		"channelEngName" : "mbcfm4u"
+    	}                        ,	    	{"programId" : "297",
+    	"imageSrc" : "http://cfile137.uf.daum.net/image/221A1C49532AB3492802FA",
+    	"programMasterName" : "오미희의 행복한 동행",
+    	"description" : "",
+    	"channelName" : "CBS 음악 FM",
+    	"channelId" : "821",
+    	"channelType" : "4",
+    	"broadcastTime" : "2000",
+		"channelEngName" : "cbsmusicfm"
+    	}                        ,	    	{"programId" : "1369",
+    	"imageSrc" : "http://cfile181.uf.daum.net/image/2139AA4F5332410E30DE3F",
+    	"programMasterName" : "유인나의 볼륨을 높여요",
+    	"description" : "",
+    	"channelName" : "KBS 쿨 FM",
+    	"channelId" : "826",
+    	"channelType" : "4",
+    	"broadcastTime" : "2000",
+		"channelEngName" : "kbs2fm"
+    	}                        ,	    	{"programId" : "209",
+    	"imageSrc" : "http://cfile176.uf.daum.net/image/2703FE4A533240FE1D67EC",
+    	"programMasterName" : "슈퍼주니어의 키스 더 라디오",
+    	"description" : "",
+    	"channelName" : "KBS 쿨 FM",
+    	"channelId" : "826",
+    	"channelType" : "4",
+    	"broadcastTime" : "2200",
+		"channelEngName" : "kbs2fm"
+    	}                        ,	    	{"programId" : "298",
+    	"imageSrc" : "http://cfile188.uf.daum.net/image/257DDB4B53323F3112560E",
+    	"programMasterName" : "허윤희의 꿈과 음악사이에",
+    	"description" : "",
+    	"channelName" : "CBS 음악 FM",
+    	"channelId" : "821",
+    	"channelType" : "4",
+    	"broadcastTime" : "2200",
+		"channelEngName" : "cbsmusicfm"
+    	}                        ,	    	{"programId" : "24",
+    	"imageSrc" : "http://cfile184.uf.daum.net/image/2217AE3C546BF4332F54A3",
+    	"programMasterName" : "허경환의 별이 빛나는 밤에",
+    	"description" : "",
+    	"channelName" : "MBC표준FM",
+    	"channelId" : "832",
+    	"channelType" : "4",
+    	"broadcastTime" : "2205",
+		"channelEngName" : "mbcfm"
+    	}        	
+    	]
+    }            ];    
+    
+    initOnairProgramList(programListJSON,"/onair/radio/genre?tagId=2", ONAIR_RADIO_GENRE_PROGRAM_ITEM_TEMPLATE, ONAIR_RADIO_EMPTY_PROGRAM_ITEM_TEMPLATE, 12, '0', '749');
+    
+    </script>
+
+</div>
+
+
+
+
+
+<h4 class="screen_out">프로그램 정보</h4>
+<div class="now_song">
+						<strong class="tit_song">12시에 만납시다 김필원입니다</strong>
+		<a href="#none" class="btn_now link_recomm" onclick="daum.Music.API.Recommend.sendByToken({id:'9',el:'recomNum',contents:'onair', user:'', token:''});return false;"><span class="screen_out">추천수 </span>
+			<span id="recomNum">18</span>
+		</a>
+					<a href="http://www.cbs.co.kr/radio/pgm/main/?pgm=112" class="btn_now link_homepage" target="_blank">홈페이지</a>
+				
+
+</div>
+
+
+
+
+<h4 class="screen_out">곡 리스트</h4>
+<div id="nowMusicListWrap" class="now_musiclist">
+    <div class="music_opt">
+        <div class="opt_btn">
+        <!-- 소셜쉐어 include -->
+<script>
+    socialShareSetVar = null;
+    socialShareSetVarFoot = null;
+	
+	daum.addEvent(window, 'load', function(){
+
+		socialShareSetVar = new socialshare( document.getElementById('socialShareMoreViewContainer'), {
+	        shareType: 'button',
+   			useCustomizedButton: true,
+	        link: '',
+	        prefix: '',
+			optionalServices: {
+	            cafe: '',
+	            blog: ''
+	        }			
+	    });
+		
+	   	daum.Music.Social.socialShareVarInit(socialShareSetVar, socialShareSetVarFoot);
+
+        var snsBtn = document.getElementById('socialShareSnsView');
+		
+        daumtools.event.on(snsBtn, 'click', function () {
+			if(socialShareSetVar.context.link != ""){
+	            socialShareSetVar.toggle();
+			}
+        });
+		
+		daumtools.event.on(document, 'click', function (e) {
+			var ev = e || window.event, target = ev.target || ev.srcElement, key;
+			
+            var snsDivLayer = daum.$$('#socialShareMoreViewContainer div')[0];
+			var snsParentNode = daum.$('socialShareSnsView');
+			
+			if(target != snsParentNode){
+    			if(daum.hasClassName(snsDivLayer, 'sns_on')){
+    				daum.removeClassName(snsDivLayer, 'sns_on');
+    			}
+			}
+        });
+	});
+</script>	
+
+<a href="#" class="btn_now link_all CT_ZONE_LIST_LISTENALL" title="전체듣기" onclick="controller.listenAll(this, {container:'trackContainer', checkboxName:'trackCheckbox'});return false;">전체듣기</a>
+<a href="#" class="btn_now link_set CT_ZONE_LIST_LISTEN" title="선택듣기" onclick="controller.listenSelect(this, {container:'trackContainer', checkboxName:'trackCheckbox'});return false;">선택듣기</a>
+<a href="#" class="btn_now link_my CT_ZONE_LIST_MYPUT" title="재생목록에 담기" onclick="controller.putSelect(this, {container:'trackContainer', checkboxName:'trackCheckbox', newPlayListName:'12시에 만납시다 김필원입니다 20141226'});return false;">재생목록에 담기</a>
+<a href="#" id = "socialShareSnsView" class="btn_now link_sns CT_ZONE_LIST_SNS" title="SNS 공유" onclick="daum.Music.Social.snsSend(this, {container:'trackContainer', checkboxName:'trackCheckbox'});return false;">SNS 공유</a><!-- 2013-12-27 수정 -->
+<div class="detail_btn">
+	<a href="javascript:;" class="btn_now link_buy CT_ZONE_LIST_BUY" title="구매" onclick="daum.Music.Onair.buySelectLayer(this);return false;">구매</a>
+	<div class="layer_buy" style="display:none;">
+		<ul class="list_buy">
+			<li><a href="javascript:;" class="link_layer buy_mp3" title="MP3 구매" onclick="controller.cartSelect('mp3');return false;">MP3 구매</a></li>
+			<li><a href="javascript:;" class="link_layer buy_mp3gift" title="MP3 선물"  onclick="controller.cartSelect('mp3_gift');return false;">MP3 선물</a></li>
+			<li><a href="javascript:;" class="link_layer buy_bgm" title="BGM 구매"  onclick="controller.cartSelect('bgm');return false;">BGM 구매</a></li>
+			<li><a href="javascript:;" class="link_layer buy_bgmgift" title="BGM 선물"  onclick="controller.cartSelect('bgm_gift');return false;">BGM 선물</a></li>
+		</ul>
+	</div>
+</div>
+
+
+	<div id="socialShareMoreViewContainer"></div>
+
+        </div>
+    
+    
+        <div id="dateContainer" class="opt_date">
+        </div>
+                
+		
+	<!-- 2013-12-16 소셜쉐어 작업 시작 -->
+	<!-- 소셜쉐어 컴포넌트가 들어갈 요소 -->
+		<div id="socialShareContainer" class=""></div>
+		<style>.no_more .sns_comm_s .share_sns_type1{width: 79px;}</style>
+	<script>
+	socialShareVarProgramInit = null;
+	
+	daum.addEvent(window, 'load', function(){
+		var prefix = '12시에 만납시다 김필원입니다 선곡표 2014-12-26';
+		var link = 'http://music.daum.net/onair/radio/genre?channelId=821&programId=749&searchDate=20141226';
+
+				var astype = 'onair'; 
+    			
+		if(prefix != ''){
+    		prefix = daum.String.replaceAll(prefix,/apos;/,"");
+    		prefix = daum.String.replaceAll(prefix,"\r\n", "");
+    		prefix = daum.String.replaceAll(prefix,"&nbsp;", "");
+    		prefix = daum.String.trim(prefix);
+			
+            prefix = prefix.replace(/\n/g, "");//행바꿈제거
+            prefix = prefix.replace(/\r/g, "");//엔터제거
+		}
+
+	    var iconEl = document.getElementById('socialShareContainer');
+	    socialShareVarProgramInit = new socialshare(iconEl, {
+	        shareType: 'icon',
+	        	        link: link,
+	        prefix: prefix
+				    });
+		
+	   	daum.Music.Social.socialShareVarProgramInit(socialShareVarProgramInit);
+
+				
+	});
+	</script>
+    
+    </div>
+
+
+    <table id="trackContainer" class="tbl_now">
+    	<caption class="screen_hide">방금 그곡 리스트</caption>
+    	<colgroup>
+    		<col style="width:32px">
+    		<col style="width:24px">
+    		<col style="width:60px">
+    		<col style="width:71px">
+    		<col style="width:auto">
+    		<col style="width:181px"> 
+    		<col style="width:307px">
+    	</colgroup>
+    	<thead>
+    		<tr>
+    			<th scope="col" class="fst">
+    				<input id="allCheck" class="inp_comm" type="checkbox" name="allCheck">
+    				<label for="allCheck" class="screen_out">전체선택</label>
+    			</th>
+    			<th scope="col"><span class="th_cell th_no">NO</span></th>
+    			<th scope="col"><span class="th_cell th_time">방송시간</span></th>
+    			<th scope="col"><span class="th_cell screen_out">앨범</span></th>
+    			<th scope="col"><span class="th_cell th_song">곡명</span></th>
+    			<th scope="col"><span class="th_cell th_artist">아티스트</span></th>
+    			<th scope="col"><span class="th_cell th_buy">구매하기</span></th>
+    		</tr>
+    	</thead>
+    	<tbody id="trackSongContainer">
+    	</tbody>
+    </table>
+
+    <div class="">
+        <div class="opt_btn">
+    		<script>
+    socialShareSetVarFoot = null;
+	daum.addEvent(window, 'load', function(){
+
+		socialShareSetVarFoot = new socialshare(document.getElementById('socialShareMoreViewContainerFoot'), {
+	        shareType: 'button',
+   			useCustomizedButton: true,
+	        link: '',
+	        prefix: '', 
+			optionalServices: {
+	            cafe: '',
+	            blog: ''
+	        }			
+	    });
+
+	   	daum.Music.Social.socialShareVarInit(socialShareSetVar, socialShareSetVarFoot);
+
+        var snsBtnFoot = document.getElementById('socialShareSnsViewFoot');
+    	
+        daumtools.event.on(snsBtnFoot, 'click', function () {
+			if(socialShareSetVarFoot.context.link != ""){
+	            socialShareSetVarFoot.toggle();
+			}
+        });
+		daumtools.event.on(document, 'click', function (e) {
+			var ev = e || window.event, target = ev.target || ev.srcElement, key;
+			
+            var snsDivLayer = daum.$$('#socialShareMoreViewContainerFoot div')[0];
+			var snsParentNode = daum.$('socialShareSnsViewFoot');
+			
+			if(target != snsParentNode){
+    			if(daum.hasClassName(snsDivLayer, 'sns_on')){
+    				daum.removeClassName(snsDivLayer, 'sns_on');
+    			}
+			}
+        });		
+	});
+</script>
+
+<a href="#" class="btn_now link_all CT_ZONE_LIST_LISTENALL" title="전체듣기" onclick="controller.listenAll(this, {container:'trackContainer', checkboxName:'trackCheckbox'});return false;">전체듣기</a>
+<a href="#" class="btn_now link_set CT_ZONE_LIST_LISTEN" title="선택듣기" onclick="controller.listenSelect(this, {container:'trackContainer', checkboxName:'trackCheckbox'});return false;">선택듣기</a>
+<a href="#" class="btn_now link_my CT_ZONE_LIST_MYPUT" title="재생목록에 담기" onclick="controller.putSelect(this, {container:'trackContainer', checkboxName:'trackCheckbox', newPlayListName:''});return false;">재생목록에 담기</a>
+<a href="#" id = "socialShareSnsViewFoot" class="btn_now link_sns CT_ZONE_LIST_SNS" title="SNS 공유" onclick="daum.Music.Social.snsSend(this, {container:'trackContainer', checkboxName:'trackCheckbox'});return false;">SNS 공유</a><!-- 2013-12-27 수정 -->
+<div class="detail_btn">
+	<a href="javascript:;" class="btn_now link_buy CT_ZONE_LIST_BUY" title="구매" onclick="daum.Music.Onair.buySelectLayer(this);return false;">구매</a>
+	<div class="layer_buy" style="display:none;">
+		<ul class="list_buy">
+			<li><a href="javascript:;" class="link_layer buy_mp3" title="MP3 구매" onclick="controller.cartSelect('mp3');return false;">MP3 구매</a></li>
+			<li><a href="javascript:;" class="link_layer buy_mp3gift" title="MP3 선물"  onclick="controller.cartSelect('mp3_gift');return false;">MP3 선물</a></li>
+			<li><a href="javascript:;" class="link_layer buy_bgm" title="BGM 구매"  onclick="controller.cartSelect('bgm');return false;">BGM 구매</a></li>
+			<li><a href="javascript:;" class="link_layer buy_bgmgift" title="BGM 선물"  onclick="controller.cartSelect('bgm_gift');return false;">BGM 선물</a></li>
+		</ul>
+	</div>
+</div>
+
+	<div id="socialShareMoreViewContainerFoot"></div>
+
+        </div>
+		    </div>
+						
+</div>
+<script type="text/javascript">
+	// 곡리스트
+	var songListViewParam = {
+		channelId : "821",
+		mediaType : "4",
+		programId : "749",
+		programStartTime : "201412261200",
+		programEndTime : "201412261400"
+	}	
+		
+	var songListView = new daum.Music.ScriptView({
+		"initLoadData" : false,
+		"songContainerId" : "trackSongContainer",
+		"jsonUrl" : "/onair/programSonglist.json",
+		//"query" : "channelId=821&channelType=4&programId=&programStartTime=201412261200&programEndTime=201412261400",
+		"type" : "song",
+		"dataParam" : songListViewParam,
+		"programStartTime":"201412261200"
+	});
+	
+	// 달력
+	var dateViewParam = {
+		searchDate :"20141226",
+		channelId : "821",
+		channelType : "4",
+		mediaType : "4",
+		programId : "749",
+		programName : "12시에 만납시다 김필원입니다",
+		tagId : "2"
+	}
+
+	var dateView = new daum.Music.ScriptView({
+		//"initLoadData" : false,
+		"dataAjaxCall" : false,
+		"dateContainerId" : "dateContainer",
+		"songContainerId" : "trackSongContainer",
+		"jsonUrl" : "/onair/programScheduleSongList.json",
+		//"query" : "searchDate=20141226&channelId=821&channelType=4&programId=749",
+		"type" : "date",
+		"dataParam" : dateViewParam,
+		"path" : "/onair/radio/genre",
+		"programStartTime":"201412261200"
+		
+	});
+	
+	// 레이어 달력	
+	var calendarLayer = new daum.Music.OnairCalendar(
+		{
+			selectedDay : "20141226",
+			dataParam : dateViewParam,
+			jsonUrl : "/onair/programScheduleList.json",
+			calContainerId : "calwrap",
+			useScheduleDays : true,
+			selectDateAddFunc : dateView.changeDate.bind(dateView),
+			minDay : "20140204"
+		}
+	);
+
+</script>
+<script type="text/javascript">  
+	var controller = new daum.Music.ListPrototype();
+	controller.initialize();  
+</script> 
+
+
+<div class="wrap_comment">
+	<iframe id="commentFrame" frameborder="0" width="100%" height="" scrolling="no" charset="utf-8" title="댓글 영역" src="http://bbs.music.daum.net/gaia/do/comment/commentList?bbsId=C012&articleId=9&templatePath=/content.htmp"></iframe>
+</div>
+
+</div><!--// mCenter -->
+			<div id="mRight"></div><!--// mRight -->
+		</div>
+		<!-- // cMain -->
+		<div class="cl_b"></div>
+		<!-- cEtc -->
+		<div id="cEtc"></div>
+		<!-- // cEtc -->
+	</div>
+	<!-- // daumContent -->
+	<hr />
+
+	<!-- daumFoot -->
+	<div id="daumFoot">
+	<h2 class="screen_out">서비스 정책 및 약관</h2>
+	<p class="footer_link">
+	    <a href="http://www.daum.net/doc/info.html" target="_blank" class="link_info">서비스 약관/정책</a> <span class="txt_bar">|</span>
+	    <a href="http://www.daum.net/doc/info_protection.html" target="_blank" class="link_info">개인정보취급방침</a> <span class="txt_bar">|</span>
+	    <a href="http://right.daum.net/" target="_blank" class="link_info">권리침해신고</a> <span class="txt_bar">|</span>
+	    <a href="http://cs.daum.net/faq/site/65.html" target="_blank" class="link_info">뮤직 고객센터</a> <span class="txt_bar">|</span>
+	    <a href="http://cs.daum.net/mail/form/65.html" target="_blank" class="link_info">뮤직 문의하기</a>
+	</p>
+	<small class="info_copyright">
+		Copyright (c) <a href="http://info.daum.net" target="_blank" class="link_daumkakao" title="다음카카오 회사소개">Daum Kakao Corp.</a>  All rights reserved.
+	</small>
+	</div>
+	<!-- // daumFoot -->
+	        <script type="text/javascript">
+    var minidaum_options = {
+        bgType: "white"
+    };
+    </script>
+	<script src="http://go.daum.net/jsa_minidaum_pc.daum" charset="utf-8" type="text/javascript"></script><!--http일 경우 -->
+
+<!-- 검색창텍스트 광고 -->
+<script type="text/javascript" src="http://display.ad.daum.net/imp?slotid=04996"></script>
+
+
+<!--[if lte IE 6]>
+<script type="text/javascript">
+(function() {
+	var daumBtnSearchAll = document.getElementById('daumBtnSearchAll');
+	var daumSuggest = document.getElementById('daumSuggest');
+	var daumBtnSearch = document.getElementById('daumBtnSearch');
+
+	daumBtnSearchAll.onmouseover
+	= daumBtnSearch.onmouseover
+	= daumSuggest.onmouseover
+	= function() {this.style.backgroundPositionY='bottom'};
+
+	daumBtnSearchAll.onmouseout
+	= daumBtnSearch.onmouseout
+	= daumSuggest.onmouseout
+	= function() {this.style.backgroundPositionY='top'};
+
+})();
+</script>
+<![endif]--> 
+<script type="text/javascript">
+//<![CDATA[
+    document.domain = "daum.net";
+    daum.suggest.Service.init();
+
+    var sug1 = daum.suggest.Service.add(
+    	"qTop",
+    	"daumSearch",
+    	"http://suggest.common.daum.net",
+    	"/music").
+    setUseThumbnail().
+    setLimit( [2,2,4] ).    // artist, album, song limit count
+    setEncodeKeyword( "utf_in_out" ).
+    setBeforeSubmitFunc( checkSubmit ).
+    setForm( document.daumSearch );
+	proxyHtmlLoadYn = "Y"; 
+	
+	function checkSubmit(form) {
+		var check = 0;
+		var suggestbox = daum.$C(form,'suggestBox')[0];
+		if(suggestbox != undefined && suggestbox.style.cssText.indexOf('block')>-1){
+			var selected =  daum.$C(suggestbox,'on')[0];
+			if(selected != undefined){
+				var selectedli = selected.getElementsByTagName('a')[0];
+				if(selectedli != undefined){
+					window.location.href = selectedli.href;
+					return false;
+				}
+				else{
+					check = 1;
+				}
+			}
+			else{
+				check = 1;
+			}
+		}
+		else{
+			check = 1;
+		}
+		if(check == 1){
+			var _dir = 'integrated';
+			form.action = "/search/" + _dir + "/list";
+			form.submit();
+		}
+		return false;
+	}
+	function goTotalSearch() {
+		window.open("http://search.daum.net/search?q="+encodeURIComponent(document.getElementById('qTop').value));
+	}
+	
+(function setServiceSearchOption(){
+	var els = {
+		"box_searchbar" : "box_searchbar", // 검색창 id
+		"queryText":"qTop" // 검색어 입력 텍스트박스 id
+	}
+
+	
+	function setSearchCategory( sug ){
+		var requestUrl = null;
+		requestUrl = "/music";
+
+		sug.setRequestUrl( requestUrl );
+		sug.reRequest();
+	}
+	
+	function setSearchOpt(){
+		
+ 		daum.$(els.queryText).focus();
+		
+		setSearchCategory(sug1);
+	}
+})();
+
+
+(function() {
+	var qTop = daum.$('qTop');
+	var searchBtn = daum.$('daumBtnSearch');
+	qTop.onfocus = function() {
+		qTop.parentNode.className += ' search_on';
+		if(!!top.document.getElementById("qTop").style.backgroundImage) {
+			top.document.getElementById("qTop").style.backgroundImage = "none";
+		}
+	};
+	qTop.onblur = function() {
+		qTop.parentNode.className = 'box_searchbar';
+	};
+	searchBtn.onclick = function() {
+		if(top.document.getElementById("qTop").style.backgroundImage != "none" && !!top.AmsLink2) {
+			top.AmsLink2();
+			return false;
+		}
+	}
+})();
+
+
+//]]>
+</script>
+<div class="wing_utilize">
+				    <a href="http://music.daum.net/purchase/ticketitem/halfsale" class="link_wing"><img src="http://cfile120.uf.daum.net/image/221921455444C4ED056AD0" width="auto" height="auto" class="thumb_wing" alt="이용권할인"></a>
+			</div> 
+</div>
+
+
+
+
+ 
+<script type="text/javascript">
+domReady( function(){
+	daum.Music.Config.init( {service_domain:"http://music.daum.net",gaia_domain:"http://bbs.music.daum.net", bi_domain: "https://bill.daum.net" } )
+	daum.Music.goToMobile();
+	
+	var fbEl = daum.$("fb-root");
+    if(fbEl) {
+        (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/ko_KR/all.js#xfbml=1";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    }
+}); 
+</script>
+
+
+<script id="CTConfigScript" type="text/javascript">
+	var CTConfig = {
+		targetElement: "daumWrap"   // (Required) 타겟이 될 element의 id를 넣어주세요. 보통 docDaum, daumWrap입니다.
+	};
+</script>
+<script src="http://s1.daumcdn.net/photo-media/static/ct/ct.js" type="text/javascript" charset="utf-8"></script>
+
+
+</body>
+</html>
+

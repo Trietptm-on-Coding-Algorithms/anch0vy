@@ -1,0 +1,48 @@
+하고싶은 서비스
+메일이나 파일 직접 올리기로 파일을 받으면
+그걸 텀블러처럼 표시를 해줌
+그리고 마지막 부분에 gps 표시 -> 모바일에선 사진 , PC에선 진짜 지도
+각 글에는 댓글달수있게
+
+저장할것들
+
+table:picture(사진파일 명단 , exif를 디비에 따로 저장)
+pid(고유넘버)
+date(찍은날,숫자로저장)
+timezone(시간대)
+GPSLongitude(정수)
+GPSLatitude(정수)
+filename(사진 파일명)
+
+
+talbe:board(게시물 부분)
+aid(고유넘버)
+title(제목)
+content(인코딩?)
+comment_num(댓글db부분 포인터,-1이면 없음,구분자사용)
+pic_num(사진db부분 포인터ㅓ,구분자 사용)
+
+table:comment(댓글부분)
+cid(고유넘버)
+ip(아이피)
+name(댓글단사람 이름)
+cpasswd(삭제수정용비번)
+ccontent(댓글내용)
+removed(삭제됬으면 1 아니면 0)
+
+GPS GPSLongitude
+GPS GPSLongitudeRef
+GPS GPSLatitude
+GPS GPSLatitudeRef
+EXIF DateTimeDigitized
+
+초기화
+CREATE TABLE picture (pid INTEGER PRIMARY KEY, date NUMERIC, timezone NUMERIC, GPSLongitude NUMERIC, GPSLongitudeRef TEXT, GPSLatitude NUMERIC, GPSLatitudeRef TEXT, filename TEXT);
+CREATE TABLE board (aid INTEGER PRIMARY KEY, title TEXT, content TEXT, comment_num TEXT, pic_num TEXT);
+CREATE TABLE comment (cid INTEGER PRIMARY KEY, ip TEXT, name TEXT, cpasswd TEXT, ccontent TEXT, removed NUMERIC);
+
+
+나중에 잘못된 위치 수정 기능도 추가
+
+
+이메일을 받으면

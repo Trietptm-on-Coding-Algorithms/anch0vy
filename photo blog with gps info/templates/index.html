@@ -1,0 +1,152 @@
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+	 	<link href="favicon.ico" rel="shortcut icon"/> 
+		<title>My site - anch0vy</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.poptrox.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/init.js"></script>
+		<script src="js/jquery.justifiedGallery.min.js"></script>
+		<script src="js/jeip.js"></script>
+		<script src="js/my.js"></script>
+		<script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
+		<link rel="stylesheet" href="css/my.css"/>
+		<noscript>
+			<link rel="stylesheet" href="css/justifiedGallery.css" />
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-xlarge.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	</head>
+	<body id="top">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="#" class="image avatar"><img src="images/avatar.png" alt="" /></a>
+				<h1><strong>{{info.nickname}}</strong><br />
+				{% autoescape false %}
+					{{info.intro}}
+				{% endautoescape %}
+				</h1>
+				{% if session.admin %}
+					<strong>*ADMIN MODE*</strong>
+					<br>
+					<a href="logout">logout</a>
+				{% endif %}
+			</header>
+
+		<!-- Main -->
+			<div id="main">
+				{% if session.admin %}
+				<form method="post" action="write" enctype="multipart/form-data">
+					<div class="row uniform 50%">
+						<div class="12u 12u$(3)">
+							<textarea name="title" id="title" placeholder="title" rows="1"></textarea>
+						</div>
+						<div class="12u 12u$(3)">
+							<textarea name="content" id="content" placeholder="지금 무엇을 하고 계신가요?" rows="4"></textarea>
+						</div>
+						<div class="6u$ 12u$(3)" style="float:right;">
+							<div class="fileUpload btn btn-primary" style="float:left;">
+							    <span>Select Picture</span>
+							    <input type="file" name="file" class="upload" multiple />
+							</div>
+							<input type="submit" value="Send Comment" style="float:right;" />
+						</div>
+					</div>
+				</form>
+				{% endif %}
+				{% for art in ret %}
+					<section id="num{{art.aid}}">
+						<header class="major" style="margin-bottom: 1em;">
+							<h2 style="display: inline-block;">
+								<a href="{{art.aid}}" id="title{{art.aid}}">{{art.title}}</a>
+							</h2>
+							{% if session.admin %}
+								-<a onclick="$('#title{{art.aid}}').click()">수정</a>
+							{% endif %}
+							<br>
+							{{art.article_date}}
+							{% if session.admin %}
+								-<a href="delete/article/{{art.aid}}">삭제</a>
+							{% endif %}
+						</header>
+						<pre style="display: inline-block;" id="content{{art.aid}}">{{art.content}}</pre>
+						{% if session.admin %}
+							-<a onclick="$('#content{{art.aid}}').click()">수정</a>
+						{% endif %}
+						{% for pic in art.pics %}
+							<div class="image fit">
+								<img src="pic/{{pic.filename}}">
+							</div>
+							<p style="text-align:center">
+								{{pic.pic_date}}
+								{% if session.admin %}
+									-<a href="delete/picture/{{pic.pid}}">삭제</a>
+								{% endif %}
+							</p>
+						{% endfor %}
+						{% if art.pics[0] %}
+							<div id="map{{art.aid}}" style="width: 100%; height: 400px;"></div>
+							<script>
+								make_map([
+								{% for pic in art.pics %}
+									['{{pic.pic_date}}',{{pic.latitude}},{{pic.longitude}}],
+								{% endfor %}
+								],'map{{art.aid}}')
+							</script>
+						{% endif %}
+					</section>
+				{% endfor %}
+				<div id="page_num" style="text-align:center">- 
+				{% for num in page.all %}
+					{% if num == page.now %}
+						<a href=?page={{num}} style="color:red;">{{num}}</a>
+					{% else %}
+						<a href=?page={{num}}>{{num}}</a>
+					{% endif %}
+				{% endfor%}
+				 -</div>
+			</div>
+			<script>
+			{% if session.admin %}
+				{% for art in ret %}
+					$( "#title{{art.aid}}" ).eip( "edit", { select_text: true } );
+					$( "#content{{art.aid}}" ).eip( "edit", { form_type: "textarea"} );
+				{% endfor %}
+			{% endif %}
+			</script>
+
+
+		<!-- Footer -->
+			<footer id="footer">
+				<ul class="icons">
+					<li><a href="http://goo.gl/CHW1Pe" class="icon fa-facebook"></a></li>
+					<li><a href="http://goo.gl/CHW1Pe" class="icon fa-twitter"></a></li>
+					{% if session.admin %}
+						<li><a href="write" class="icon fa-pencil-square-o"></a></li>
+						<li><a href="mailcheck" class="icon fa-envelope-o"></a></li>
+					{% else %}
+						<li><a href="admin" class="icon fa-wrench"></a></li>
+					{% endif %}
+				</ul>
+				<ul class="copyright">
+					<li>&copy; All pictures cannot be copied without permission.</li>
+					<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</footer>
+
+	</body>
+</html>

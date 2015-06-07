@@ -1,0 +1,14 @@
+.item {
+  margin: 5px;
+  float: left;
+  width : 100px; height : 100px;
+  background-color : Black; 
+  border-radius : 10px;
+}
+
+.col1{
+	width : 210px; height : 210px;
+}
+.col2{
+	width : 420px; height : 420px;
+}

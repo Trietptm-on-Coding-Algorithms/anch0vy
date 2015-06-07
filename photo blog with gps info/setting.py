@@ -1,0 +1,9 @@
+USER='danbi'
+PASSWD='my!ch4075'
+MAIL_SENDER='aaaa875@naver.com'
+MAIL_SERVER_ID='anch0vy'
+MAIL_SERVER_PASSWD='rt[ch[4075'
+SHOW_ARTICLE_NUM_AT_ONE_PAGE=5
+ADMIN_PASSWORD='anch0vyanddanbi'
+ALLOWED_EXTENSIONS = set(['jpg', 'jpeg','JPG', 'JPEG'])
+UPLOAD_FOLDER='pic'

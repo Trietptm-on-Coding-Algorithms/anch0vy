@@ -1,0 +1,27 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, user-scalable=no">
+</head>
+<body>
+<pre id="pre">
+내 이름을 불러 불러
+불러 불러 불러주세요
+단 한 번만이라도
+단 한 번만이라도
+
+내 맘 속에 들러 들러
+들러 들러 들러준다면
+잠깐만이라도
+아주 잠깐만이라도
+
+</pre>
+<form method="post" action="/admin"><input id="hiddeninput" name="my_name" type="password" style="width:0;height:0;opacity:0;"/></form>
+<script>
+  function set() {
+    document.getElementById('hiddeninput').focus();
+  }
+document.getElementById('pre').addEventListener('click',set)
+</script>
+</body>
+</html>
